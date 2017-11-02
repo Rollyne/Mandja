@@ -24,12 +24,12 @@ class Recipe(models.Model):
 class Description(models.Model):
     order = models.IntegerField()
     content = models.CharField(max_length=400)
-    recipe = models.ForeignKey(Recipe, on_delete=models.SET_NULL, null=True)
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
 
 
 class Comment(models.Model):
     content = models.CharField(max_length=400)
-    recipe = models.ForeignKey(Recipe, on_delete=models.SET_NULL, null=True)
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     author = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True)
     parent = models.ForeignKey('self', on_delete=models.SET_NULL, null=True)
     date_published = models.DateField()
