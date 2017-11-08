@@ -97,4 +97,4 @@ if __name__ == "__main__":
     print("Parsing ingredients to binary..")
     binX = parse_ingredients_region_to_binary(region_ingrX=pd.read_pickle("data/region_ingrX.pkl"),
                                        all_ingredients=pd.read_pickle("data/ingredients.pkl"))
-    binX.to_pickle("data/region_ingrX.pkl")
+    binX.to_pickle("data/recipe_ingr_bin.pkl")
