@@ -39,11 +39,9 @@ def split_ingredients_and_regions_to_file(equalize_regions: bool = False):
 
             Y.append(args[0])
             for x in args[1:]:
-                ingredient_words = x.split(" ")
-                for iw in ingredient_words:
-                    if len(iw) >= 3:
-                        all_ingredients.add(iw)
-                        ingredients.add(iw)
+                if len(x) >= 3:
+                    all_ingredients.add(x)
+                    ingredients.add(x)
             Xingr.append(ingredients)
     if equalize_regions:
         return pd.DataFrame(Xingr), pd.DataFrame(Y)
@@ -72,9 +70,8 @@ def parse_binary_features_to_ingredients(binX: pd.DataFrame, all_ingredients: pd
     return ingredients
 
 
-def get_and_split_input_recipe_ingredients():
+def get_input_recipe_ingredients():
     ingredients = set([])
-    ingredients_splitted = set([])
     print("Exit to stop")
     while True:
         ingredient = input("Gimme ingredient: ")
@@ -82,13 +79,8 @@ def get_and_split_input_recipe_ingredients():
             break
         ingredients.add(ingredient)
 
-    for ingr in ingredients:
-        ingrs = ingr.split(" ")
-        for i in ingrs:
-            if len(i) >= 3:
-                ingredients_splitted.add(i)
 
-    return pd.DataFrame(list(ingredients_splitted))
+    return pd.DataFrame(list(ingredients))
 
 
 if __name__ == "__main__":
