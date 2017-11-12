@@ -16,12 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from rest_framework.documentation import include_docs_urls
-from cookbook import views
+from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^docs/', include_docs_urls(title='FlaNet API', description='RESTful API for FlaNet')),
 
-    url(r'^$', views.api_root),
     url(r'^', include('cookbook.urls', namespace='cookbook')),
+    # url(r'^', views.WebAppView.as_view()),
 ]
