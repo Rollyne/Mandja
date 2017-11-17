@@ -1,13 +1,9 @@
 from django.conf.urls import url
-from rest_framework.urlpatterns import format_suffix_patterns
 from . import views
 
 urlpatterns = [
-    url(r'^cookbook/$', views.RecipeList.as_view(), name='recipe-list'),
+    url(r'^cookbook/$', views.RecipeManageView.as_view(), name='recipe-list'),
     url(r'^cookbook/(?P<pk>[0-9]+)/$', views.RecipeDetail.as_view(), name='recipe-detail'),
-
-    url(r'^accounts/(?P<pk>[0-9]+)/$', views.AccountDetail.as_view(), name='account-detail'),
-    url(r'^accounts/$', views.AccountList.as_view(), name='account-list'),
 
     url(r'^cookbook/(?P<pk>[0-9]+)/comments/$', views.CommentList.as_view(), name='comment-list'),
     url(r'^cookbook/comments/(?P<pk>[0-9]+)/$', views.CommentDetail.as_view(), name='comment-detail'),

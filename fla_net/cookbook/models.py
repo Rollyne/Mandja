@@ -1,6 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.utils import timezone
+
+from accounts.models import Account
 
 
 class Ingredient(models.Model):
@@ -9,14 +10,6 @@ class Ingredient(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class Account(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-
-
-    def __str__(self):
-        return self.user.username
 
 
 class Recipe(models.Model):

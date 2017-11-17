@@ -18,10 +18,12 @@ from django.contrib import admin
 from rest_framework.documentation import include_docs_urls
 from . import views
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^docs/', include_docs_urls(title='FlaNet API', description='RESTful API for FlaNet')),
 
     url(r'^', include('cookbook.urls', namespace='cookbook')),
+    url(r'^', include('accounts.urls', namespace='accounts')),
     # url(r'^', views.WebAppView.as_view()),
 ]

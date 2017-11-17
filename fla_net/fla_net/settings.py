@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cookbook',
     'rest_framework',
+    'rest_framework.authtoken',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,7 @@ REACT_APP_DIR = os.path.join(BASE_DIR, 'web')
 STATICFILES_DIRS = [
     os.path.join(REACT_APP_DIR, 'build', 'static'),
 ]
+
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'fla_net.utils.custom_exception_handler'
+}

@@ -5,6 +5,7 @@
       <option name="ignoredIdentifiers">
         <list>
           <option value="fla_net.fla_net.urls.cookbook" />
+          <option value="fla_net.cookbook.models.accounts" />
         </list>
       </option>
     </inspection_tool>

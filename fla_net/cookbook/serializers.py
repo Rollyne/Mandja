@@ -1,20 +1,7 @@
 from rest_framework import serializers
 
-from .models import Recipe, Account, Comment, Ingredient, InRecipe, Description
-
-
-class AccountSerializer(serializers.HyperlinkedModelSerializer):
-    user = serializers.ReadOnlyField(source='user.username')
-
-
-    class Meta:
-        model = Account
-        fields = ['id','user']
-        extra_kwargs = {
-            'url': {
-                'view_name': 'cookbook:account-detail',
-            }
-        }
+from .models import Recipe, Comment, Ingredient, InRecipe, Description
+from accounts.serializers import AccountSerializer
 
 
 class CommentSerializer(serializers.HyperlinkedModelSerializer):
@@ -59,14 +46,15 @@ class DescriptionSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class RecipeSerializer(serializers.HyperlinkedModelSerializer):
-    author = serializers.ReadOnlyField(source='author.user.username')
+    author_name = serializers.ReadOnlyField(source='author.user.username')
     ingredients = InrecipeSerializer(source='inrecipe_set', read_only=True, many=True)
     descriptions = DescriptionSerializer(source='description_set', read_only=True, many=True)
     comments = CommentSerializer(source='comment_set', read_only=True, many=True)
+    author = AccountSerializer('author', required=False)
 
     class Meta:
         model = Recipe
-        fields = [ 'id', 'title', 'author', 'date_published', 'date_last_updated', 'cooking_time', 'hands_on_time', 'ingredients', 'descriptions', 'comments']
+        fields = [ 'id', 'title', 'author_name', 'date_published', 'date_last_updated', 'cooking_time', 'hands_on_time', 'ingredients', 'descriptions', 'comments', 'author']
         extra_kwargs = {
             'url':{
                 'view_name':'cookbook:recipe-detail'

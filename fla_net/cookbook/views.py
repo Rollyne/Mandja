@@ -1,12 +1,19 @@
-from rest_framework.decorators import api_view
+from numpy import unicode
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.decorators import api_view, renderer_classes
 from rest_framework.exceptions import ValidationError
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
 from rest_framework import generics
 from rest_framework.request import Request
 
-from .models import Recipe, Account, Comment, Ingredient, InRecipe
-from .serializers import RecipeSerializer, AccountSerializer, CommentSerializer, IngredientSerializer, InrecipeSerializer
+from fla_net.views import BaseManageView
+
+from accounts.models import Account
+from .models import Recipe, Comment, Ingredient, InRecipe
+from .serializers import RecipeSerializer, CommentSerializer, IngredientSerializer, InrecipeSerializer
 
 # Create your views here.
 
@@ -19,15 +26,22 @@ def api_root(request, fromat=None):
 
 # -----------------------------------------------------
 
-class RecipeList(generics.ListCreateAPIView):
+@renderer_classes((JSONRenderer, ))
+class RecipeList(generics.ListAPIView):
     queryset = Recipe.objects.all()
     serializer_class = RecipeSerializer
 
 
+class RecipeCreate(generics.CreateAPIView):
+    serializer_class = RecipeSerializer
+    permission_classes = (IsAuthenticated,)
+    authentication_classes = (TokenAuthentication, )
+
     def perform_create(self, serializer):
-        serializer.save(user=self.request.user)
+        serializer.save(author=Account.objects.get(user__id=self.request.user.id))
 
 
+@renderer_classes((JSONRenderer, ))
 class RecipeDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = RecipeSerializer
 
@@ -41,22 +55,17 @@ class RecipeDetail(generics.RetrieveUpdateDestroyAPIView):
         serializer = RecipeSerializer(queryset, context=context)
         return Response(serializer.data)
 
-# -----------------------------------------------------
 
-class AccountList(generics.ListAPIView):
-    queryset = Account.objects.all()
-    serializer_class = AccountSerializer
-
-
-class AccountDetail(generics.RetrieveUpdateDestroyAPIView):
-    serializer_class = AccountSerializer
-
-
-    def get_queryset(self):
-        return Account.objects.all()
+class RecipeManageView(BaseManageView):
+        VIEWS_BY_METHOD = {
+            'GET': RecipeList.as_view,
+            'POST': RecipeCreate.as_view,
+        }
 
 # -----------------------------------------------------
 
+
+@renderer_classes((JSONRenderer, ))
 class CommentList(generics.ListCreateAPIView):
     serializer_class = CommentSerializer
     queryset = Comment.objects.all()
@@ -73,6 +82,7 @@ class CommentList(generics.ListCreateAPIView):
         return Response(serializer.data)
 
 
+@renderer_classes((JSONRenderer, ))
 class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CommentSerializer
 
@@ -81,6 +91,7 @@ class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
 
 # -----------------------------------------------------
 
+@renderer_classes((JSONRenderer, ))
 class IngredientList(generics.ListCreateAPIView):
     serializer_class = IngredientSerializer
     queryset = Ingredient.objects.all()
@@ -105,6 +116,7 @@ class IngredientList(generics.ListCreateAPIView):
         serializer.save()
 
 
+@renderer_classes((JSONRenderer, ))
 class IngredientDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = IngredientSerializer
 
@@ -113,6 +125,7 @@ class IngredientDetail(generics.RetrieveUpdateDestroyAPIView):
 
 # -----------------------------------------------------
 
+@renderer_classes((JSONRenderer, ))
 class InrecipeList(generics.ListCreateAPIView):
     serializer_class = InrecipeSerializer
     queryset = InRecipe.objects.all()

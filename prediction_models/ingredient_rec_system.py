@@ -8,6 +8,16 @@ from collections import OrderedDict
 from math import isnan
 
 
+def get_top_replacements():
+    # TODO: Get the top n replacements for an ingredient
+    pass
+
+
+def get_top_recommendations_multiple():
+    # TODO: Get the top n additions to a set of ingredients
+    pass
+
+
 def get_recipe_ingredients_cos_similarity(ingrX_bin: np.ndarray):
     """
     Makes a tf-idf transformation of a binary matrix and it feeds it to a cosine similarity algorithm.
@@ -78,6 +88,7 @@ def save_cos_similarities_to_pkl():
 
     cos_recipes.columns = ingr_inters.values[:, 0]
     cos_recipes.index = ingr_inters.values[:, 0]
+    print(cos_recipes)
     cos_compounds.columns = ingr_inters.values[:, 0]
     cos_compounds.index = ingr_inters.values[:, 0]
 
