@@ -1,0 +1,51 @@
+import React from 'react';
+
+import HomeStore from '../stores/HomeStore';
+import HomeActions from '../actions/HomeActions';
+import RecipeCard from './Recipe/RecipeCard';
+
+class Home extends React.Component {
+    constructor(props) {
+        super(props);
+        console.log(HomeStore.getState());
+        this.state = HomeStore.getState();
+
+        this.onChange = this.onChange.bind(this);
+    }
+
+    onChange(state) {
+        this.setState(state);
+    }
+
+    componentDidMount() {
+        HomeStore.listen(this.onChange);
+
+        HomeActions.getLatestRecipes();
+    }
+
+    componentWillUnmount() {
+        HomeStore.unlisten(this.onChange);
+    }
+
+    render() {
+        const recipes = this.state.latestRecipes.map((recipe, index) =>
+            (<RecipeCard
+                key={recipe.id}
+                recipe={recipe}
+                index={index} />));
+        return (
+            <div className="container">
+                <h3 className="text-center">Welcome to
+                    <strong> FlaNet</strong>
+                </h3>
+                <div className="list-group">
+                    {this.state.error}
+                    {recipes}
+                </div>
+            </div>
+        );
+    }
+
+}
+
+export default Home;

@@ -1,626 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f0e4709-cba3-428c-ab70-edf85e65e097" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/de/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/es_AR/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/es_ES/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/fr/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/pl/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/ru/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/markupsafe/_speedups.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ach/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ar/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/be/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ca/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ca_ES/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/cs/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/da/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/de/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/el/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/el_GR/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en_AU/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en_CA/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en_US/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/es/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/et/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fa/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fa_IR/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fi/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fr/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fr_CA/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/gl/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/gl_ES/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/he_IL/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/hu/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/id/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/it/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ja/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ko_KR/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/lv/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/mk/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/nb/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/nl/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/nn/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/no/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pl/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pt/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pt_BR/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pt_PT/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ro/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ru/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/sk/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/sl/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/sv/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/tr/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/tr_TR/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/uk/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/vi/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_CN/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_Hans/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_Hant/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_TW/LC_MESSAGES/django.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/img/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/img/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/chardetect" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/accounts/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/migrations/0003_auto_20171116_1325.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/migrations/0004_auto_20171116_1327.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/migrations/0005_auto_20171116_1330.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/fla_net/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/npm-debug.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/entry_points.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Jinja2-2.10.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/MarkupSafe-1.0.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi-2017.11.5.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi-2017.11.5.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi-2017.11.5.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi-2017.11.5.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi-2017.11.5.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi-2017.11.5.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi-2017.11.5.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi/__main__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi/cacert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi/core.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi/old_root.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/certifi/weak.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/entry_points.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet-3.0.4.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/big5freq.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/big5prober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/chardistribution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/charsetgroupprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/charsetprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/cli/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/cli/chardetect.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/codingstatemachine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/cp949prober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/enums.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/escprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/escsm.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/eucjpprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/euckrfreq.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/euckrprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/euctwfreq.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/euctwprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/gb2312freq.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/gb2312prober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/hebrewprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/jisfreq.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/jpcntx.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/langbulgarianmodel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/langcyrillicmodel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/langgreekmodel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/langhebrewmodel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/langhungarianmodel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/langthaimodel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/langturkishmodel.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/latin1prober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/mbcharsetprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/mbcsgroupprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/mbcssm.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/sbcharsetprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/sbcsgroupprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/sjisprober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/universaldetector.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/utf8prober.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/chardet/version.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/entry_points.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi-2.3.3.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/auth.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/client.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/corejson.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/display.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/download.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/jsondata.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/python.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/codecs/text.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/document.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/transports/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/transports/base.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/transports/http.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreapi/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema-0.0.4.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema-0.0.4.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema-0.0.4.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema-0.0.4.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema-0.0.4.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema-0.0.4.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema-0.0.4.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/encodings/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/encodings/corejson.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/encodings/html.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/encodings/jsonschema.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/formats.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/schemas.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/bootstrap3/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/bootstrap3/inputs/checkbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/bootstrap3/inputs/input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/bootstrap3/inputs/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/bootstrap3/inputs/select_multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/bootstrap3/inputs/textarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/templates/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/coreschema/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filter-1.1.0.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/conf.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/constants.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/fields.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/filters.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/filterset.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/de/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/es_AR/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/es_ES/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/fr/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/pl/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/ru/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/locale/zh_CN/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/rest_framework/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/rest_framework/backends.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/rest_framework/filters.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/rest_framework/filterset.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/templates/django_filters/rest_framework/crispy_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/templates/django_filters/rest_framework/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/templates/django_filters/widgets/multiwidget.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/django_filters/widgets.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/djangorestframework-3.7.3.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna-2.6.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna-2.6.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna-2.6.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna-2.6.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna-2.6.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna-2.6.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna-2.6.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/codec.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/core.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/idnadata.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/intranges.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/package_data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/idna/uts46data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes-1.1.0.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes-1.1.0.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes-1.1.0.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes-1.1.0.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes-1.1.0.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes-1.1.0.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes-1.1.0.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/itypes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/_compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/_identifier.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/asyncfilters.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/asyncsupport.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/bccache.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/compiler.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/constants.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/debug.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/defaults.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/environment.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/ext.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/filters.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/idtracking.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/lexer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/loaders.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/meta.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/nativetypes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/nodes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/optimizer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/parser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/runtime.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/sandbox.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/jinja2/visitor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/markupsafe/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/markupsafe/_compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/markupsafe/_constants.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/markupsafe/_native.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/markupsafe/_speedups.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests-2.18.4.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests-2.18.4.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests-2.18.4.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests-2.18.4.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests-2.18.4.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests-2.18.4.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests-2.18.4.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/__version__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/_internal_utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/adapters.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/auth.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/certs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/cookies.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/help.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/hooks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/packages.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/sessions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/status_codes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/structures.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/requests/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/.vscode/settings.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authentication.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/management/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/management/commands/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/management/commands/drf_create_token.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/migrations/0002_auto_20160226_1747.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/authtoken/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/checks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/compat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/decorators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/documentation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/fields.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/filters.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/generics.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ach/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ar/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/be/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ca/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ca_ES/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/cs/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/da/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/de/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/el/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/el_GR/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en_AU/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en_CA/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/en_US/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/es/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/et/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fa/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fa_IR/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fi/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fr/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/fr_CA/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/gl/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/gl_ES/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/he_IL/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/hu/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/id/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/it/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ja/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ko_KR/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/lv/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/mk/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/nb/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/nl/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/nn/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/no/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pl/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pt/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pt_BR/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/pt_PT/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ro/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/ru/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/sk/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/sl/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/sv/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/tr/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/tr_TR/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/uk/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/vi/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_CN/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_Hans/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_Hant/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/locale/zh_TW/LC_MESSAGES/django.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/metadata.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/mixins.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/negotiation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/pagination.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/parsers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/permissions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/relations.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/renderers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/request.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/response.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/reverse.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/routers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/schemas/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/schemas/generators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/schemas/inspectors.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/schemas/utils.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/schemas/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/serializers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/css/bootstrap-tweaks.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/css/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/css/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/css/font-awesome-4.0.3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/css/highlight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/css/jquery.json-view.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/js/api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/js/highlight.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/js/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/docs/js/jquery.json-view.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/js/ajax-form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/js/coreapi-0.1.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/js/csrf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/js/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/js/jquery-1.12.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/static/rest_framework/js/prettify-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/status.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/admin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/admin/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/admin/dict_value.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/admin/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/admin/list_value.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/admin/simple_list_value.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/auth/basic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/auth/session.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/auth/token.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/document.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/error.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/interact.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/langs/javascript-intro.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/langs/javascript.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/langs/python-intro.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/langs/python.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/langs/shell-intro.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/langs/shell.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/link.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/docs/sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/filters/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/filters/ordering.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/filters/search.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/checkbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/checkbox_multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/fieldset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/list_fieldset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/radio.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/select_multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/horizontal/textarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/checkbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/checkbox_multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/fieldset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/list_fieldset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/radio.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/select_multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/inline/textarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/login_base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/pagination/numbers.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/pagination/previous_and_next.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/raw_data_form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/schema.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/checkbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/checkbox_multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/fieldset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/input.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/list_fieldset.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/radio.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/select.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/select_multiple.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templates/rest_framework/vertical/textarea.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templatetags/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/templatetags/rest_framework.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/throttling.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/urlpatterns.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/breadcrumbs.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/encoders.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/field_mapping.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/formatting.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/html.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/humanize_datetime.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/json.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/mediatypes.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/model_meta.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/representation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/serializer_helpers.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/utils/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/validators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/versioning.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/viewsets.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate-3.0.0.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate-3.0.0.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate-3.0.0.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate-3.0.0.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate-3.0.0.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate-3.0.0.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate-3.0.0.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate/api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate/template.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/uritemplate/variable.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3-1.22.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3-1.22.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3-1.22.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3-1.22.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3-1.22.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3-1.22.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3-1.22.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/_collections.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/connection.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/connectionpool.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/_securetransport/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/_securetransport/bindings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/_securetransport/low_level.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/appengine.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/ntlmpool.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/pyopenssl.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/securetransport.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/contrib/socks.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/fields.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/filepost.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/packages/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/packages/backports/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/packages/backports/makefile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/packages/ordered_dict.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/packages/six.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/packages/ssl_match_hostname/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/packages/ssl_match_hostname/_implementation.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/poolmanager.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/request.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/response.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/connection.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/request.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/response.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/retry.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/selectors.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/ssl_.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/timeout.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/url.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/urllib3/util/wait.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prediction_models/data/recipe_ingr_bin.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="8f277744-28a0-49b5-a180-f739e019cc92" name="New changelist" comment="New changelist">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/models.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/serializers.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/urls.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/views.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/fla_net/middleware.py" afterPath="$PROJECT_DIR$/fla_net/fla_net/middleware.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/fla_net/settings.py" afterPath="$PROJECT_DIR$/fla_net/fla_net/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/fla_net/urls.py" afterPath="$PROJECT_DIR$/fla_net/fla_net/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/fla_net/views.py" afterPath="$PROJECT_DIR$/fla_net/fla_net/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prediction_models/cos_compounds.pkl" afterPath="$PROJECT_DIR$/prediction_models/cos_compounds.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prediction_models/cos_recipes.pkl" afterPath="$PROJECT_DIR$/prediction_models/cos_recipes.pkl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prediction_models/ingredient_rec_system.py" afterPath="$PROJECT_DIR$/prediction_models/ingredient_rec_system.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/.gitignore" afterPath="$PROJECT_DIR$/fla_net/web/.gitignore" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -656,7 +39,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fla_net/cookbook/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="350">
               <caret line="40" column="81" lean-forward="false" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
@@ -668,7 +51,7 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fla_net/cookbook/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
+            <state relative-caret-position="686">
               <caret line="52" column="55" lean-forward="false" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -680,7 +63,7 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fla_net/accounts/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
+            <state relative-caret-position="154">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
@@ -689,21 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RecipeAdd.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RecipeAdd.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1494">
+            <state relative-caret-position="14">
               <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ingredient_rec_system.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/prediction_models/ingredient_rec_system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -722,7 +95,7 @@
       <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/python3.5/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5544">
+            <state relative-caret-position="4312">
               <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
               <folding />
             </state>
@@ -732,7 +105,7 @@
       <file leaf-file-name="data_preparation.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prediction_models/data_preparation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
+            <state relative-caret-position="1050">
               <caret line="76" column="84" lean-forward="false" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="84" />
               <folding />
             </state>
@@ -742,7 +115,7 @@
       <file leaf-file-name="RecipeAddActions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="420">
               <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -785,7 +158,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/fla_net/web" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -860,11 +233,11 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/fla_net/web/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="632" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1347" />
+    <option name="y" value="18" />
+    <option name="width" value="1853" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -903,6 +276,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -958,7 +332,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1107,7 +480,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8f0e4709-cba3-428c-ab70-edf85e65e097" name="Default" comment="" />
+      <changelist id="8f277744-28a0-49b5-a180-f739e019cc92" name="New changelist" comment="" />
       <created>1509534468108</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1197,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510947914791</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added functioning components, home page and add recipe form to the reactjs web part.&#10;Moved the Account model to new app.&#10;Modified API functionality&#10;Added Token authorization for the API&#10;Added TODO functions to the prediction_models">
+      <created>1510948166117</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1510948166117</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1210,28 +590,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="1347" y="18" width="1853" height="1031" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18404908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18905473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280255" sideWeight="0.49261084" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.62857145" sideWeight="0.54489684" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4334471" sideWeight="0.551686" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.62857145" sideWeight="0.4551032" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908705" sideWeight="0.4958949" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33485714" sideWeight="0.41791046" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4334471" sideWeight="0.44831398" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.49358618" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280255" sideWeight="0.48932678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39657143" sideWeight="0.4792111" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33485714" sideWeight="0.41791046" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270366" sideWeight="0.49135527" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39657143" sideWeight="0.4792111" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1243,6 +623,7 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="SHOW_ROOT_NAMES" value="true" />
               <option name="RECENTLY_FILTERED_USER_GROUPS">
                 <collection />
               </option>
@@ -1277,7 +658,8 @@
     <MESSAGE value="Completed the ingredient recommendation system using F1 for cosine similarities between ingredients, compounds and recipes.&#10;Refactored code so it can simply return the desired output." />
     <MESSAGE value="Added ReactJS web project and connected it to the Django project." />
     <MESSAGE value="Added functioning components, home page and add recipe form to the reactjs web part.&#10;Moved the Account model to new app.&#10;Modified API functionality&#10;Added Token authorization for the API&#10;Added TODO functions to the prediction_models" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functioning components, home page and add recipe form to the reactjs web part.&#10;Moved the Account model to new app.&#10;Modified API functionality&#10;Added Token authorization for the API&#10;Added TODO functions to the prediction_models" />
+    <MESSAGE value="Add missing files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add missing files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1299,13 +681,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fla_net/web/src/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="258" column="3" lean-forward="false" selection-start-line="258" selection-start-column="3" selection-end-line="258" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fla_net/web/src/utilities/Helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1350,6 +725,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fla_net/fla_net/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/alt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
@@ -1403,7 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1418,7 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,9 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="27" column="14" lean-forward="false" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1472,9 +849,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,9 +863,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
           <caret line="79" column="38" lean-forward="false" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1499,7 +870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1507,7 +877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1515,7 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1523,9 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="33" column="49" lean-forward="true" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1536,11 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/cookbook/models.py">
+    <entry file="file://$PROJECT_DIR$/fla_net/fla_net/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,9 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#14#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1558,7 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1566,9 +926,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#35#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1584,9 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#28#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1602,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1626,7 +979,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="420">
           <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -1636,7 +989,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fla_net/cookbook/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
+        <state relative-caret-position="686">
           <caret line="52" column="55" lean-forward="false" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -1646,7 +999,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fla_net/accounts/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
+        <state relative-caret-position="154">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -1656,7 +1009,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fla_net/cookbook/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="350">
           <caret line="40" column="81" lean-forward="false" selection-start-line="40" selection-start-column="81" selection-end-line="40" selection-end-column="81" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
@@ -1664,17 +1017,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prediction_models/data_preparation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
+        <state relative-caret-position="1050">
           <caret line="76" column="84" lean-forward="false" selection-start-line="76" selection-start-column="72" selection-end-line="76" selection-end-column="84" />
           <folding />
         </state>
@@ -1688,7 +1033,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/python3.5/codecs.py">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5544">
           <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
@@ -1696,10 +1041,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/python3.5/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4312">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/prediction_models/ingredient_rec_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="360">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="85" column="14" lean-forward="false" selection-start-line="85" selection-start-column="14" selection-end-line="85" selection-end-column="14" />
           <folding />
         </state>
       </provider>
