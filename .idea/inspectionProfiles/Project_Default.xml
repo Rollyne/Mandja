@@ -6,6 +6,8 @@
         <list>
           <option value="fla_net.fla_net.urls.cookbook" />
           <option value="fla_net.cookbook.models.accounts" />
+          <option value="fla_net.cookbook.views.accounts" />
+          <option value="fla_net.cookbook.serializers.accounts" />
         </list>
       </option>
     </inspection_tool>

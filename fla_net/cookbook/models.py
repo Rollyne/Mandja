@@ -61,3 +61,7 @@ class Comment(models.Model):
     date_published = models.DateTimeField(default=timezone.now())
     date_last_updated = models.DateTimeField(default=timezone.now())
 
+
+class Fridge(models.Model):
+    pass
+

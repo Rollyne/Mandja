@@ -20,3 +20,9 @@ from rest_framework.authtoken.models import Token
 def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
         Token.objects.create(user=instance)
+#
+# def create_account(sender, instance, created, **kwargs):
+#     if created:
+#         Account.objects.create(user=instance)
+#
+# post_save.connect(create_account, sender=User)

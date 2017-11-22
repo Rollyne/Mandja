@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^accounts/$', views.AccountList.as_view(), name='account-list'),
     url(r'^accounts/login/$', authtoken_views.obtain_auth_token, name='account-login'),
     url(r'^accounts/me/$', views.CurrentUserView.as_view(), name='account-me'),
+    url(r'^accounts/signup/$', views.CreateAccount.as_view(), name='account-signup'),
 ]

@@ -137,3 +137,7 @@ STATICFILES_DIRS = [
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'fla_net.utils.custom_exception_handler'
 }
+
+FIXTURE_DIRS = [
+    'cookbook.fixtures'
+]
