@@ -1,18 +1,23 @@
 from rest_framework import serializers
 
-from .models import Recipe, Comment, Ingredient, InRecipe, Description
+from .models import Recipe, Comment, Ingredient, InRecipe, Description, RecipeImage
 from accounts.serializers import AccountSerializer
 
 
 class CommentSerializer(serializers.ModelSerializer):
 
-    author = serializers.SlugField(source='user.username')
-    recipe = serializers.SlugField(source='recipe.id')
-    parent_id = serializers.SlugField(source='parent.id')
+    author = serializers.SlugField(source='author.user.username', read_only=True)
+    author_id = serializers.SlugField(source='author.id', read_only=True)
 
     class Meta:
         model = Comment
-        fields = ['id', 'author', 'recipe', 'parent_id', 'content', 'date_published', 'date_last_updated']
+        fields = ['id', 'author', 'author_id', 'content', 'date_published', 'date_last_updated']
+    #
+    # def create(self, validated_data):
+    #     recipe = validated_data.pop('recipe')
+    #     recipe = Recipe.objects.get(id=recipe['id'])
+    #     comment = Comment.objects.create(recipe=recipe, **validated_data)
+    #     return comment
 
 
 
@@ -48,12 +53,22 @@ class DescriptionSerializer(serializers.ModelSerializer):
         fields = ['recipe', 'order', 'content']
 
 
+class RecipeImageSerializer(serializers.HyperlinkedModelSerializer):
+    url = serializers.ImageField(max_length=None, allow_empty_file=True, use_url=True, read_only=True)
+    id = serializers.IntegerField(required=False, read_only=True)
+    class Meta:
+        model = RecipeImage
+        fields = ['url', 'id', 'picture']
+
+
 class RecipeSerializer(serializers.ModelSerializer):
     ingredients = InrecipeSerializer(source='inrecipe_set', many=True, required=False, read_only=True)
     descriptions = DescriptionSerializer(source='description_set', many=True, required=False, read_only=True)
     comments = CommentSerializer(source='comment_set', read_only=True, many=True)
     author = AccountSerializer('author', required=False)
+    images = RecipeImageSerializer(source='recipeimage_set', many=True, read_only=True)
 
     class Meta:
         model = Recipe
-        fields = [ 'id', 'title', 'date_published', 'date_last_updated', 'cooking_time', 'hands_on_time', 'ingredients', 'descriptions', 'comments', 'author']
+        fields = [ 'id', 'title', 'date_published', 'date_last_updated', 'cooking_time', 'hands_on_time', 'ingredients', 'descriptions', 'comments', 'author', 'images']
+

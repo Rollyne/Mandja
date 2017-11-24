@@ -1,7 +1,9 @@
 from numpy import unicode
 from rest_framework.authentication import TokenAuthentication
-from rest_framework.decorators import api_view, renderer_classes, permission_classes, authentication_classes
+from rest_framework.decorators import api_view, renderer_classes, permission_classes, authentication_classes, \
+    parser_classes
 from rest_framework.exceptions import ValidationError
+from rest_framework.parsers import FileUploadParser, MultiPartParser, FormParser, JSONParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
@@ -12,9 +14,11 @@ from rest_framework.request import Request
 from fla_net.views import BaseManageView
 
 from accounts.models import Account
-from .models import Recipe, Comment, Ingredient, InRecipe
+from .models import Recipe, Comment, Ingredient, InRecipe, RecipeImage
 from .serializers import RecipeSerializer, CommentSerializer, IngredientSerializer, InrecipeSerializer, \
-    DescriptionSerializer
+    DescriptionSerializer, RecipeImageSerializer
+
+import ast
 
 
 # Create your views here.
@@ -28,6 +32,20 @@ def api_root(request, fromat=None):
 
 # -----------------------------------------------------
 
+from rest_framework import parsers
+from formencode.variabledecode import variable_decode
+
+class MultipartFormencodeParser(parsers.MultiPartParser):
+
+    def parse(self, stream, media_type=None, parser_context=None):
+        result = super().parse(
+            stream,
+            media_type=media_type,
+            parser_context=parser_context
+        )
+        data = variable_decode(result.data)
+        return parsers.DataAndFiles(data, result.files)
+
 #@renderer_classes((JSONRenderer, ))
 class RecipeList(generics.ListAPIView):
     queryset = Recipe.objects.all()
@@ -40,11 +58,12 @@ class RecipeCreate(generics.CreateAPIView):
     serializer_class = RecipeSerializer
     permission_classes = (IsAuthenticated,)
     authentication_classes = (TokenAuthentication, )
+    parser_classes = (MultipartFormencodeParser, )
 
     def create(self, request, *args, **kwargs):
         recipe_data = request.data
-        ingredients_data = recipe_data.pop('ingredients')
-        descriptions_data = recipe_data.pop('descriptions')
+        ingredients_data = ast.literal_eval(recipe_data.pop('ingredients'))
+        descriptions_data = ast.literal_eval(recipe_data.pop('descriptions'))
 
         recipe_serializer = RecipeSerializer(data=recipe_data)
         ingredients_serializer = InrecipeSerializer(data=ingredients_data, many=True)
@@ -59,12 +78,13 @@ class RecipeCreate(generics.CreateAPIView):
             recipe = recipe_serializer.instance
             descriptions_serializer.save(recipe=recipe)
             ingredients_serializer.save(recipe=recipe)
+            [RecipeImage.objects.create(recipe=recipe, picture=request.FILES[key]) for key in request.FILES]
 
             return Response({'message': 'Success!'}, status=200)
         else:
             return Response([recipe_serializer.errors,
                              ingredients_serializer.errors,
-                             descriptions_serializer.errors])
+                             descriptions_serializer.errors,])
 
 
 #@renderer_classes((JSONRenderer, ))
@@ -95,6 +115,7 @@ class RecipeManageView(BaseManageView):
 class CommentList(generics.ListCreateAPIView):
     serializer_class = CommentSerializer
     queryset = Comment.objects.all()
+    authentication_classes = (TokenAuthentication,)
 
     def list(self, request, *args, **kwargs):
         id = kwargs['pk']
@@ -106,6 +127,10 @@ class CommentList(generics.ListCreateAPIView):
 
         serializer = CommentSerializer(queryset, many=True, context=context)
         return Response(serializer.data)
+    def perform_create(self, serializer, *args, **kwargs):
+        recipe_id = self.request.parser_context['kwargs']['pk']
+        serializer.save(author=Account.objects.get(user__id=self.request.user.id), recipe=Recipe.objects.get(id=recipe_id))
+
 
 
 @renderer_classes((JSONRenderer, ))

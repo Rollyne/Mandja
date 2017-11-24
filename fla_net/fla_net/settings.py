@@ -142,5 +142,5 @@ FIXTURE_DIRS = [
     'cookbook.fixtures'
 ]
 
-MEDIA_ROOT = '../cookbook/media'
-MEDIA_URL = 'http://localhost/cookbook/media'
+MEDIA_ROOT = 'cookbook/media/'
+MEDIA_URL = '/media/'

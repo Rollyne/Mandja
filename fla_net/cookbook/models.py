@@ -4,6 +4,7 @@ from django.utils import timezone
 from accounts.models import Account
 
 
+
 class Ingredient(models.Model):
     name = models.CharField(max_length=50)
 
@@ -23,6 +24,11 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class RecipeImage(models.Model):
+    picture = models.ImageField(upload_to='images')
+    recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)\
 
 
 class InRecipe(models.Model):
