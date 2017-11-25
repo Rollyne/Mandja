@@ -24,12 +24,13 @@ def get_top_replacements(ingredient_name: str, top_n: int = 5):
         i += 1
         if (i > top_n + 1):
             break
-        result[k] = v
+        if (k != ingredient_name):
+            result[k] = v
 
     return result
 
 
-def get_top_recommendations_multiple(ingredient_names: str, top_n: int = 5):
+def get_top_recommendations_multiple(ingredient_names: [str], top_n: int = 5):
 
     top_results = {}
 
@@ -37,15 +38,15 @@ def get_top_recommendations_multiple(ingredient_names: str, top_n: int = 5):
         result = get_top_matches(ingredient_name, top_n)
 
         for k, v in result.items():
-            if k not in ingredient_names:
-                if k in top_results.keys():
-                    top_results[k] = (top_results[k] + v) / 2 #Keeping the overall value under 1 with '/ 2'
-                else:
-                    top_results[k] = v
+            if k in top_results.keys():
+                top_results[k] = (top_results[k] + v) / 2 #Keeping the overall value under 1 with '/ 2'
+            else:
+                top_results[k] = v
 
-    top_results = OrderedDict(sorted(top_results.items(), key=lambda kv: kv[1], reverse=True))
+    top_results = sorted(top_results.items(), key=lambda kv: kv[1], reverse=True)
 
-    return top_results
+    return top_results[0:top_n]
+
 
 def get_recipe_ingredients_cos_similarity(ingrX_bin: np.ndarray):
     """
@@ -96,7 +97,8 @@ def get_top_matches(ingredient_name: str, top_n: int = 5):
         i += 1
         if (i > top_n+1):
             break
-        result[k] = v
+        if (k != ingredient_name):
+            result[k] = v
 
     return result
 
@@ -133,9 +135,10 @@ if __name__ == "__main__":
     print("Top Replacements")
     print(get_top_replacements(input("Ingredient: "), int(input("Top n: "))))
 
-    ingredients_list = ["banana", "apple", "strawberry"]
+    ingredients_list = ["beer", "potato"]
 
     print("Top Recommendations: (For a list of ingredients)")
+    print(ingredients_list)
     print(get_top_recommendations_multiple(ingredients_list, int(input("Top n: "))))
 
 
