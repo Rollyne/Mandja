@@ -6,6 +6,8 @@ import Auth from '../Auth';
 class UserActions {
     constructor() {
         this.generateActions(
+            'registerUserSuccess',
+            'registerUserFail',
             'loginUserSuccess',
             'loginUserFail',
             'logoutUserSuccess',
@@ -14,29 +16,51 @@ class UserActions {
         );
     }
 
-    loginUser() {
-        function getCookie(name) {
-            let cookieValue = null;
-            if (document.cookie && document.cookie !== '') {
-                const cookies = document.cookie.split(';');
-                for (let i = 0; i < cookies.length; i += 1) {
-                    const cookie = $.trim(cookies[i]);
+    getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i += 1) {
+                const cookie = $.trim(cookies[i]);
                     // Does this cookie string begin with the name we want?
-                    if (cookie.substring(0, name.length + 1) === (`${name}=`)) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
-                    }
+                if (cookie.substring(0, name.length + 1) === (`${name}=`)) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
                 }
             }
-            return cookieValue;
         }
+        return cookieValue;
+    }
 
-        const csrftoken = getCookie('csrftoken');
+    registerUser(data) {
+        const csrftoken = this.getCookie('csrftoken');
+
+        const request = {
+            url: 'api/accounts/signup/',
+            method: 'post',
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            headers: {
+                'X-CSRFToken': csrftoken,
+            },
+        };
+
+        $.ajax(request)
+            .done(() => this.registerUserSuccess())
+            .fail((error) => {
+                console.log(error);
+                this.registerUserFail(error);
+            });
+        return true;
+    }
+
+    loginUser(data) {
+        const csrftoken = this.getCookie('csrftoken');
 
         const request = {
             url: 'api/accounts/login/',
             method: 'post',
-            data: JSON.stringify({ username: 'juji', password: 'bob4orba' }),
+            data: JSON.stringify(data),
             contentType: 'application/json',
             headers: {
                 'X-CSRFToken': csrftoken,
@@ -69,7 +93,7 @@ class UserActions {
             },
         };
         $.ajax(request)
-            .done((user) => { this.getCurrentUserSuccess(user); })
+            .done((profile) => { this.getCurrentUserSuccess(profile); })
             .fail((error) => { this.getCurrentUserFail(error); });
         return true;
     }

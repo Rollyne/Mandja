@@ -7,7 +7,6 @@ import RecipeCard from './Recipe/RecipeCard';
 class Home extends React.Component {
     constructor(props) {
         super(props);
-        console.log(HomeStore.getState());
         this.state = HomeStore.getState();
 
         this.onChange = this.onChange.bind(this);
@@ -38,7 +37,7 @@ class Home extends React.Component {
                 <h3 className="text-center">Welcome to
                     <strong> FlaNet</strong>
                 </h3>
-                <div className="list-group">
+                <div>
                     {this.state.error}
                     {recipes}
                 </div>

@@ -1,298 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f277744-28a0-49b5-a180-f739e019cc92" name="New changelist" comment="Added Recipe Detail View">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cookbook/media/images/Ubuntu-Wallpapers-12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cookbook/media/images/Ubuntu-Wallpapers-12_iF2KKRH.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/media/images/23509412_1941478122778785_8896703032715029129_o.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/media/images/23509412_1941478122778785_8896703032715029129_o_WokJkEi.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/media/images/23509412_1941478122778785_8896703032715029129_o_iZ0Rpym.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/media/images/Ubuntu-Wallpapers-12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/media/images/Ubuntu-Wallpapers-12_4j5LrLg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libfreetype-0891c94d.so.6.15.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libjpeg-bcb94a84.so.9.2.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/liblcms2-488a716d.so.2.0.8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/liblzma-f444c404.so.5.2.2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libopenjp2-59185378.so.2.1.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libpng16-4b619e46.so.16.25.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libtiff-fa49d64f.so.5.2.6" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libwebp-ff8209c3.so.7.0.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libwebpdemux-3d2fbd88.so.2.0.2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libwebpmux-7b696cfc.so.3.0.0" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/.libs/libz-a147dcb0.so.1.2.3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_imaging.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_imagingcms.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_imagingft.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_imagingmath.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_imagingmorph.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_imagingtk.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_webp.cpython-35m-x86_64-linux-gnu.so" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/cs/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/da/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/de/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/el/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/es/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/et/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/fi/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/fr/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/it/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/ja/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/ko/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/lt/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/nb_NO/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/nl/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/pl/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/pt_BR/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/pt_PT/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/ru/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sk/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sl/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sr/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sv/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/tr/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/zh_CN/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/zh_TW/LC_MESSAGES/FormEncode.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/enhancer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/explode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/gifmaker.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/painter.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilconvert.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pildriver.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilfile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilfont.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/pilprint.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/player.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/thresholder.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/viewer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/cookbook/migrations/0008_auto_20171123_0906.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/web/src/actions/CommentActions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/CommentListActions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeDetailActions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/web/src/stores/CommentStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/CommentListStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeDetailStore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/FormEncode-1.3.1.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/FormEncode-1.3.1.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/FormEncode-1.3.1.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/FormEncode-1.3.1.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/FormEncode-1.3.1.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/FormEncode-1.3.1.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/FormEncode-1.3.1.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/OleFileIO_PL.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/BdfFontFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/BmpImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/BufrStubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ContainerIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/CurImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/DcxImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/DdsImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/EpsImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ExifTags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/FitsStubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/FliImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/FontFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/FpxImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/FtexImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/GbrImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/GdImageFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/GifImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/GimpGradientFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/GimpPaletteFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/GribStubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/Hdf5StubImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/IcnsImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/IcoImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/Image.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageChops.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageCms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageColor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageDraw.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageDraw2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageEnhance.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageFilter.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageFont.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageGrab.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageMath.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageMode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageMorph.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageOps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImagePalette.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImagePath.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageQt.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageSequence.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageShow.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageStat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageTk.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageTransform.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImageWin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/ImtImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/IptcImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/Jpeg2KImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/JpegImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/JpegPresets.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/McIdasImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/MicImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/MpegImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/MpoImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/MspImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/OleFileIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PSDraw.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PaletteFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PalmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PcdImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PcfFontFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PcxImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PdfImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PixarImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PngImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PpmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PsdImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/PyAccess.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/SgiImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/SpiderImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/SunImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/TarIO.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/TgaImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/TiffImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/TiffTags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/WalImageFile.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/WebPImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/WmfImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/XVThumbImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/XbmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/XpmImagePlugin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_binary.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_tkinter_finder.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/_util.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/features.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/PIL/version.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/Pillow-4.3.0.dist-info/zip-safe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/Design.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/ToDo.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/Validator.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/community.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/download.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/history.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/htmlfill.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/i18n.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/index.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/modules.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/whatsnew-0-to-1.2.4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/whatsnew-1.2.5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/docs/whatsnew-1.3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/api.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/compound.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/context.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/declarative.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/doctest_xml_compare.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/exc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/fieldstorage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/foreach.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/htmlfill.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/htmlfill_schemabuilder.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/htmlgen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/htmlrename.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/FormEncode.pot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/cs/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/da/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/de/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/el/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/es/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/et/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/fi/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/fr/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/it/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/ja/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/ko/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/lt/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/nb_NO/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/nl/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/pl/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/pt_BR/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/pt_PT/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/ru/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sk/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sl/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sr/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/sv/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/tr/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/zh_CN/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/i18n/zh_TW/LC_MESSAGES/FormEncode.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/interfaces.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/javascript/ordering.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/national.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/rewritingparser.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/schema.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/htmlfill_data/data-error1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/htmlfill_data/data-fill1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/htmlfill_data/data-fill2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/htmlfill_data/data-fill3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/htmlfill_data/data-fill4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/htmlfill_data/data-form-last-element.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/htmlfill_data/data-schema1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/non_empty.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_cc.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_compound.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_context.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_declarative.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_doctest_xml_compare.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_doctests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_email.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_htmlfill.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_htmlgen.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_htmlrename.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_i18n.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_schema.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_subclassing.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_subclassing_old.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_validators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/tests/test_variabledecode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/validators.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/formencode/variabledecode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile-0.44.dist-info/DESCRIPTION.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile-0.44.dist-info/INSTALLER" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile-0.44.dist-info/METADATA" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile-0.44.dist-info/RECORD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile-0.44.dist-info/WHEEL" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile-0.44.dist-info/metadata.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile-0.44.dist-info/top_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile/CONTRIBUTORS.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile/README.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile/README.rst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/python3.5/site-packages/olefile/olefile.py" />
+    <list default="true" id="8f277744-28a0-49b5-a180-f739e019cc92" name="New changelist" comment="Connected recipe detail view and added image upload option to the add recipe">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fla_net/web/src/components/NavbarUserMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/fla_net/web/src/components/UserProfile.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/models.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/serializers.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/serializers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/urls.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/cookbook/views.py" afterPath="$PROJECT_DIR$/fla_net/cookbook/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/fla_net/settings.py" afterPath="$PROJECT_DIR$/fla_net/fla_net/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/bower_components/bootstrap/less/forms.less" afterPath="$PROJECT_DIR$/fla_net/web/bower_components/bootstrap/less/forms.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/package-lock.json" afterPath="$PROJECT_DIR$/fla_net/web/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/package.json" afterPath="$PROJECT_DIR$/fla_net/web/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/App.css" afterPath="$PROJECT_DIR$/fla_net/web/src/App.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/App.js" afterPath="$PROJECT_DIR$/fla_net/web/src/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js" afterPath="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentCard.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentForm.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/DescriptionCard.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/DescriptionCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/IngredientCard.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/IngredientCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/actions/UserActions.js" afterPath="$PROJECT_DIR$/fla_net/web/src/actions/UserActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Home.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Navbar.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Navbar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeDetail.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeDetail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeCard.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/components/common/PrivateRoute.js" afterPath="$PROJECT_DIR$/fla_net/web/src/components/common/PrivateRoute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/index.js" afterPath="$PROJECT_DIR$/fla_net/web/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/routes.js" afterPath="$PROJECT_DIR$/fla_net/web/src/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeAddStore.js" afterPath="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeAddStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/stores/UserStore.js" afterPath="$PROJECT_DIR$/fla_net/web/src/stores/UserStore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/styles/App.css" afterPath="$PROJECT_DIR$/fla_net/web/src/styles/App.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/styles/bootstrap.min.css" afterPath="$PROJECT_DIR$/fla_net/web/src/styles/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/styles/index.css" afterPath="$PROJECT_DIR$/fla_net/web/src/styles/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/src/styles/main.css" afterPath="$PROJECT_DIR$/fla_net/web/src/styles/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pip-selfcheck.json" afterPath="$PROJECT_DIR$/pip-selfcheck.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fla_net/web/webpack.config.js" afterPath="$PROJECT_DIR$/fla_net/web/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -329,11 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RecipeDetail.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RecipeDetail.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeDetail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="190" column="8" lean-forward="false" selection-start-line="189" selection-start-column="8" selection-end-line="190" selection-end-column="8" />
+            <state relative-caret-position="2574">
+              <caret line="157" column="52" lean-forward="false" selection-start-line="157" selection-start-column="52" selection-end-line="157" selection-end-column="52" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -341,11 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentList.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentList.js">
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fla_net/cookbook/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+            <state relative-caret-position="1242">
+              <caret line="72" column="83" lean-forward="false" selection-start-line="72" selection-start-column="83" selection-end-line="72" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipeAdd.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="954">
+              <caret line="63" column="37" lean-forward="false" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -353,75 +96,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserProfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/User/UserProfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RecipeDetailActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeDetailActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="42" column="45" lean-forward="false" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentListStore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/stores/Recipe/CommentListStore.js">
+      <file leaf-file-name="ingredient_rec_system.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/prediction_models/ingredient_rec_system.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserStore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/stores/UserStore.js">
+      <file leaf-file-name="UserLogin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/User/UserLogin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="26" column="38" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="792">
+              <caret line="52" column="8" lean-forward="false" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentListActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/Recipe/CommentListActions.js">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fla_net/cookbook/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserActions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/UserActions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="83" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="1098">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentForm.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentForm.js">
+      <file leaf-file-name="generics.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/python3.5/site-packages/rest_framework/generics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="21" />
+            <state relative-caret-position="3294">
+              <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipeAddActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="42" column="10" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecipeAddStore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeAddStore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="72" column="26" lean-forward="false" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IngredientCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/IngredientCard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="30" column="118" lean-forward="false" selection-start-line="30" selection-start-column="118" selection-end-line="30" selection-end-column="118" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -441,10 +182,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>middleware</find>
-      <find>user</find>
-      <find>jqu</find>
-      <find>PORT</find>
       <find>REST_FRAMEWORK</find>
       <find>RecipeCard</find>
       <find>account</find>
@@ -471,6 +208,10 @@
       <find>console.log</find>
       <find>perform_create</find>
       <find>this.props</find>
+      <find>CommentListStore</find>
+      <find>CommentStore</find>
+      <find>submit</find>
+      <find>triggerFile</find>
     </findStrings>
     <replaceStrings>
       <replace>value={this.state.profile.user</replace>
@@ -479,14 +220,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/fla_net/web" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/prediction_models/data/asdf.py" />
-        <option value="$PROJECT_DIR$/prediction_models/data/ingr_inters.json" />
-        <option value="$PROJECT_DIR$/fla_net/cookbook/fixtures/ingr_inters.json" />
         <option value="$PROJECT_DIR$/fla_net/web/src/App.css" />
         <option value="$PROJECT_DIR$/fla_net/web/src/components/BaseForm/Submit.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/Auth.js" />
@@ -501,40 +239,43 @@
         <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/REcipeDetail.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/routes.js" />
         <option value="$PROJECT_DIR$/fla_net/web/public/index.html" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Home.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/stores/FormStore.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/index.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/actions/UserActions.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/stores/UserStore.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/components/User/UserRegister.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeCard.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/components/User/NavbarUserMenu.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/components/Navbar.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/styles/main.css" />
         <option value="$PROJECT_DIR$/fla_net/web/node_modules/react-images-upload/index.css" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeAddStore.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/utilities/Helpers.js" />
         <option value="$PROJECT_DIR$/fla_net/cookbook/models.py" />
         <option value="$PROJECT_DIR$/fla_net/fla_net/settings.py" />
         <option value="$PROJECT_DIR$/fla_net/cookbook/urls.py" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeDetailActions.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/components/User/UserProfile.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/IngredientCard.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/DescriptionCard.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeDetailStore.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/components/User/UserLogin.js" />
-        <option value="$PROJECT_DIR$/fla_net/cookbook/views.py" />
-        <option value="$PROJECT_DIR$/fla_net/cookbook/serializers.py" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentCard.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentForm.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/stores/CommentStore.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/actions/CommentActions.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/CommentListActions.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentList.js" />
-        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeDetail.js" />
         <option value="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/CommentListStore.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/CommentListActions.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/stores/UserStore.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeDetailActions.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/actions/CommentActions.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/stores/CommentStore.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentList.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentForm.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeDetailStore.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/CommentCard.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Home.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeCard.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/IngredientCard.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/SubstitutesModal.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeDetail.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js" />
+        <option value="$PROJECT_DIR$/fla_net/cookbook/serializers.py" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/stores/Recipe/RecipeAddStore.js" />
+        <option value="$PROJECT_DIR$/fla_net/web/node_modules/react-images-upload/index.js" />
+        <option value="$PROJECT_DIR$/fla_net/cookbook/views.py" />
+        <option value="$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js" />
+        <option value="$PROJECT_DIR$/prediction_models/ingredient_rec_system.py" />
       </list>
     </option>
   </component>
@@ -555,10 +296,10 @@
     <handled-path value="$PROJECT_DIR$/fla_net/web/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="735" />
+    <option name="x" value="1139" />
     <option name="y" value="-4" />
-    <option name="width" value="1152" />
-    <option name="height" value="868" />
+    <option name="width" value="1148" />
+    <option name="height" value="859" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -686,6 +427,11 @@
               <item name="fla-net" type="462c0819:PsiDirectoryNode" />
               <item name="prediction_models" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fla-net" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fla-net" type="462c0819:PsiDirectoryNode" />
+              <item name="prediction_models" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -695,7 +441,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/fla_net/web/package.json" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/fla_net/web/scripts" />
   </component>
@@ -983,7 +729,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511426277655</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Connected recipe detail view and added image upload option to the add recipe">
+      <created>1511555838398</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1511555838398</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fixed some bugs. Added recommendation modal. Fixed the images uploading bug.">
+      <created>1511677180362</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1511677180362</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1104,7 +864,9 @@
     <MESSAGE value="Add missing files." />
     <MESSAGE value="Modified the recipe add form, the serializers and the views. It is properly functioning." />
     <MESSAGE value="Added Recipe Detail View" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Recipe Detail View" />
+    <MESSAGE value="Connected recipe detail view and added image upload option to the add recipe" />
+    <MESSAGE value="Fixed some bugs. Added recommendation modal. Fixed the images uploading bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed some bugs. Added recommendation modal. Fixed the images uploading bug." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1122,7 +884,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="99" />
+      <option name="time" value="107" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -1244,7 +1006,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
           <caret line="145" column="13" lean-forward="false" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,33 +1039,33 @@
     <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/User/UserLogin.js" />
     <entry file="file://$PROJECT_DIR$/fla_net/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="-15">
+          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/fla_net/utils.py">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/BaseForm/Submit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/cookbook/urls.py">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/HomeActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/cookbook/models.py">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/NavbarActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/cookbook/views.py">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/UserActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1098">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
@@ -1312,7 +1073,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/cookbook/serializers.py">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Navbar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
           <caret line="72" column="83" lean-forward="false" selection-start-line="72" selection-start-column="83" selection-end-line="72" selection-end-column="83" />
@@ -1323,12 +1084,12 @@
     <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/BaseForm/Submit.js" />
     <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="108">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="12" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeAdd.js">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/stores/CommentStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="55" column="5" lean-forward="false" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
@@ -1346,7 +1107,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/Recipe/RecipeAddActions.js">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/CommentActions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="45" column="10" lean-forward="false" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
@@ -1366,24 +1127,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/HomeActions.js">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="7823" column="1" lean-forward="false" selection-start-line="7823" selection-start-column="1" selection-end-line="7823" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/web/src/actions/NavbarActions.js">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Recipe/RecipeCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="540">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#26#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Navbar.js">
+    <entry file="file://$PROJECT_DIR$/fla_net/web/src/components/Home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="37" column="49" lean-forward="false" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+        <state relative-caret-position="377">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
