@@ -16,4 +16,6 @@ urlpatterns = [
 
     url(r'^cookbook/ingredients/$', views.IngredientList.as_view(), name='ingredient-list'),
     url(r'^cookbook/ingredients/(?P<pk>[0-9]+)/$', views.IngredientDetail.as_view(), name='ingredient-detail'),
+
+    url(r'^cookbook/substitutes/$', views.GetSubstitutes.as_view(), name='substitutes-list'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

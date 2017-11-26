@@ -1,9 +1,9 @@
-from sklearn.cross_validation import train_test_split
-from sklearn.ensemble import GradientBoostingClassifier
 from _pickle import dump, load
 from os import path
-from prediction_models.data_preparation import *
+
 import pandas as pd
+from sklearn.cross_validation import train_test_split
+from sklearn.ensemble import GradientBoostingClassifier
 
 
 def train_classifier(X_train, X_test, Y_train, Y_test):
