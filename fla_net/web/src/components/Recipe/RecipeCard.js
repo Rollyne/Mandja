@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Helpers from './Helpers';
+import { Card, CardImg, CardTitle, CardBody, CardSubtitle } from 'reactstrap';
 
 class RecipeCard extends React.Component {
     constructor(props) {
@@ -21,28 +21,17 @@ class RecipeCard extends React.Component {
 
 
     render() {
-        const nodes = Helpers.nodesRecipeCard(this.state, this.props, this.toggleVotePanel);
         return (
-            <div className="animated fadeIn">
-                <div className="media movie">
-                    <span className="position pull-left">{this.props.index + 1}</span>
-                    <div className="media-body">
-                        <h4 className="media-heading">
-                            <Link to={`/recipe/${this.props.recipe.id}/${this.props.recipe.title}`}>
-                                {this.props.recipe.title}
-                            </Link>
-                        </h4>
+            <div className="animated fadeIn" style={{ display: 'inline-block', width: '30%', margin: '5px' }}>
+                <Card style={{ }}>
+                    <CardImg top style={{ width: '100%' }} src={this.props.recipe.images.length > 0 ? this.props.recipe.images[0].picture : null} />
+                    <CardBody>
+                        <CardTitle><Link to={`recipes/${this.props.recipe.id}`}>{this.props.recipe.title}</Link></CardTitle>
+                        <CardSubtitle>{this.props.recipe.date_published}</CardSubtitle>
                         <br />
-                        <div className="votes">Rating:
-                            5
-                        </div>
-                        <br /><br />
-                    </div>
-                    { nodes.panelToggles }
-                </div>
-
-                { nodes.votePanel }
-                <div id="clear" />
+                        <CardSubtitle>Author: <Link to="">{this.props.recipe.author.user.username}</Link></CardSubtitle>
+                    </CardBody>
+                </Card>
             </div>
         );
     }

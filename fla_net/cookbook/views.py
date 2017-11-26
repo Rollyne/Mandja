@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from numpy import unicode
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import api_view, renderer_classes, permission_classes, authentication_classes, \
@@ -78,13 +80,16 @@ class RecipeCreate(generics.CreateAPIView):
             recipe = recipe_serializer.instance
             descriptions_serializer.save(recipe=recipe)
             ingredients_serializer.save(recipe=recipe)
-            [RecipeImage.objects.create(recipe=recipe, picture=request.FILES[key]) for key in request.FILES]
+            x = dict(request.FILES)
+            for file in x.items():
+                for item in file[1]:
+                    RecipeImage.objects.create(recipe=recipe, picture=item)
 
             return Response({'message': 'Success!'}, status=200)
         else:
             return Response([recipe_serializer.errors,
                              ingredients_serializer.errors,
-                             descriptions_serializer.errors,])
+                             descriptions_serializer.errors,], status=400)
 
 
 #@renderer_classes((JSONRenderer, ))
@@ -192,3 +197,17 @@ class InrecipeList(generics.ListCreateAPIView):
 
         serializer = InrecipeSerializer(queryset, many=True, context=context)
         return Response(serializer.data)
+
+# -----------------------------------------------------
+
+from prediction_models import ingredient_rec_system
+from rest_framework.views import APIView
+class GetSubstitutes(APIView):
+
+    def get(self, request, format=None):
+        ingredient = request.query_params['ingredient']
+        n = request.query_params['amount']
+
+        result = ingredient_rec_system.get_top_replacements(ingredient_name=ingredient, top_n=int(n))
+        result_desc = OrderedDict(sorted(result.items(), key=lambda kv: kv[1], reverse=True))
+        return Response(result_desc, status=200)

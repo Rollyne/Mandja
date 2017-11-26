@@ -1,7 +1,8 @@
 import React from 'react';
 
-import UserStore from '../stores/UserStore';
-import UserActions from '../actions/UserActions';
+import UserStore from '../../stores/UserStore';
+import UserActions from '../../actions/UserActions';
+import alt from '../../alt';
 
 export default class UserProfile extends React.Component {
     constructor(props) {
@@ -23,16 +24,17 @@ export default class UserProfile extends React.Component {
 
     componentWillUnmount() {
         UserStore.unlisten(this.onChange);
+        alt.recycle(UserStore);
     }
 
     render() {
         return (
             <div>
-                <div className="container profile-container">
+                <div className="container container-fluid profile-container">
                     <div className="profile-img" />
                     <div className="profile-info clearfix">
-                        <h2><strong>{this.state.user.username}</strong></h2>
-                        <h2><strong>{this.state.user.email}</strong></h2>
+                        <h2><strong>{this.state.profile.user.username}</strong></h2>
+                        <h2><strong>{this.state.profile.user.email}</strong></h2>
                     </div>
                 </div>
             </div>

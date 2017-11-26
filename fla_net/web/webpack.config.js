@@ -192,4 +192,4 @@ module.exports = function (env) {
             'hidden-source-map' :
             'cheap-module-eval-source-map',
     };
-}
+};

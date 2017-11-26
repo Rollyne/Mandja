@@ -3,13 +3,11 @@ import './styles/App.css';
 import './styles/main.css';
 import Routes from './routes';
 import Navbar from './components/Navbar';
-import UserActions from './actions/UserActions';
 
 class App extends Component {
     state = { loading: false };
 
     componentDidMount() {
-        UserActions.loginUser();
     }
 
     render() {

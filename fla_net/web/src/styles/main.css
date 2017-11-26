@@ -8138,3 +8138,38 @@ label {
   -webkit-animation-delay: -500ms;
           animation-delay: -500ms;
 }
+
+.help-block {
+  display:none;
+}
+.has-error .help-block,
+.has-success .help-block {
+  display: inherit;
+}
+
+.form-control, input[type="text"]{
+  z-index: 0;
+}
+
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.uploadPictureContainer {
+  padding: 0;
+}
+
+
+

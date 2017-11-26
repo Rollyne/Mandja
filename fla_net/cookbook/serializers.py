@@ -8,6 +8,8 @@ class CommentSerializer(serializers.ModelSerializer):
 
     author = serializers.SlugField(source='author.user.username', read_only=True)
     author_id = serializers.SlugField(source='author.id', read_only=True)
+    date_published = serializers.DateTimeField(format='%d/%m/%Y %H:%M:%S', read_only=True)
+    date_last_updated = serializers.DateTimeField(format='%d/%m/%Y %H:%M:%S', read_only=True)
 
     class Meta:
         model = Comment
@@ -67,6 +69,8 @@ class RecipeSerializer(serializers.ModelSerializer):
     comments = CommentSerializer(source='comment_set', read_only=True, many=True)
     author = AccountSerializer('author', required=False)
     images = RecipeImageSerializer(source='recipeimage_set', many=True, read_only=True)
+    date_published = serializers.DateTimeField(format='%d/%m/%Y',read_only=True)
+    date_last_updated = serializers.DateTimeField(format='%d/%m/%Y', read_only=True)
 
     class Meta:
         model = Recipe

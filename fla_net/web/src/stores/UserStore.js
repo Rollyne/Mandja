@@ -1,3 +1,4 @@
+import toastr from 'toastr';
 import alt from '../alt';
 import UserActions from '../actions/UserActions';
 import Auth from '../Auth';
@@ -6,29 +7,32 @@ class UserStore {
     constructor() {
         this.bindActions(UserActions);
 
-        this.user = {};
+        this.profile = {
+            account: {},
+            user: {},
+        };
     }
 
     onLoginUserSuccess(csrfToken) {
         Auth.authenticateUser(csrfToken.token);
-        console.log('LoggedIn');
+        toastr.success('Logged in.');
     }
 
     onLoginUserFail(error) {
-        console.log(error);
+        toastr.error(error);
     }
 
     onLogoutUserSuccess() {
         Auth.deauthenticateUser();
-        console.log('Logged out.');
+        toastr.success('Logged out.');
     }
 
-    onGetCurrentUserSuccess(user) {
-        this.user = user;
+    onGetCurrentUserSuccess(profile) {
+        this.profile = profile;
     }
 
     onGetCurrentUserFail(error) {
-        console.log(error);
+        toastr.error(error);
     }
 }
 

@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import $ from 'jquery';
 import NavbarStore from '../stores/NavbarActions';
-import NavbarUserMenu from './NavbarUserMenu';
+import UserStore from '../stores/UserStore';
+import NavbarUserMenu from './User/NavbarUserMenu';
+import Auth from '../Auth';
 
 class Navbar extends React.Component {
 
@@ -20,18 +21,7 @@ class Navbar extends React.Component {
 
     componentDidMount() {
         NavbarStore.listen(this.onChange);
-
-        $(document).ajaxStart(() => {
-            this.setState({
-                ajaxAnimationClass: 'fadeIn',
-            });
-        });
-
-        $(document).ajaxComplete(() => {
-            this.setState({
-                ajaxAnimationClass: 'fadeOut',
-            });
-        });
+        UserStore.listen(this.onChange);
     }
 
     componentWillUnmount() {
@@ -39,6 +29,11 @@ class Navbar extends React.Component {
     }
 
     render() {
+        const authenticatedOptions = Auth.isUserAuthenticated() ? (
+            <li>
+                <Link to="/recipes/add">Add Recipe</Link>
+            </li>
+        ) : null;
         return (
             <nav className="navbar navbar-default navbar-static-top">
                 <div className="navbar-header">
@@ -47,23 +42,12 @@ class Navbar extends React.Component {
                         className="navbar-toggle collapsed"
                         data-toggle="collapse"
                         data-target="#navbar">
-                        <span className="sr-only">Toggle Navigation</span>
+                        <span className="sr-only">Toggle navigation</span>
                         <span className="icon-bar" />
                         <span className="icon-bar" />
                         <span className="icon-bar" />
                     </button>
                     <Link to="/" className="navbar-brand">
-                        <span className={`triangles animated${this.state.ajaxAnimationClass}`}>
-                            <div className="tri invert" />
-                            <div className="tri invert" />
-                            <div className="tri" />
-                            <div className="tri invert" />
-                            <div className="tri invert" />
-                            <div className="tri" />
-                            <div className="tri invert" />
-                            <div className="tri" />
-                            <div className="tri invert" />
-                        </span>
                         FlaNet
                     </Link>
                 </div>
@@ -72,9 +56,7 @@ class Navbar extends React.Component {
                         <li>
                             <Link to="/">Home</Link>
                         </li>
-                        <li>
-                            <Link to="/recipes/add">Add Recipe</Link>
-                        </li>
+                        {authenticatedOptions}
                     </ul>
 
                     <NavbarUserMenu />

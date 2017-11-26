@@ -7,13 +7,13 @@ from sklearn.metrics.pairwise import cosine_similarity
 from collections import OrderedDict
 from math import isnan
 
+path = os.path.dirname(__file__)
 
 def get_top_replacements(ingredient_name: str, top_n: int = 5):
-
-    if not os.path.exists("cos_compounds.pkl"):
+    if not os.path.exists(os.path.join(path, "cos_compounds.pkl")):
         save_cos_similarities_to_pkl() # This creates both files even though I need just one of them
 
-    cos_comp_ingr = pd.read_pickle("cos_compounds.pkl")[ingredient_name]
+    cos_comp_ingr = pd.read_pickle(os.path.join(path,"cos_compounds.pkl"))[ingredient_name]
 
     d_descending = OrderedDict(sorted(cos_comp_ingr.items(), key=lambda kv: kv[1], reverse=True))
 
@@ -75,11 +75,11 @@ def get_top_matches(ingredient_name: str, top_n: int = 5):
     Returns a dictionary containing the top N ingredients with their similarity value.
     """
 
-    if not os.path.exists("cos_compounds.pkl") or not os.path.exists("cos_recipes.pkl"):
+    if not os.path.exists(os.path.join(path,"cos_compounds.pkl")) or not os.path.exists(os.path.join(path,"cos_recipes.pkl")):
         save_cos_similarities_to_pkl()
 
-    cos_comp_ingr = pd.read_pickle("cos_compounds.pkl")[ingredient_name]
-    cos_recipe_ingr = pd.read_pickle("cos_recipes.pkl")[ingredient_name]
+    cos_comp_ingr = pd.read_pickle(os.path.join(path,"cos_compounds.pkl"))[ingredient_name]
+    cos_recipe_ingr = pd.read_pickle(os.path.join(path,"cos_recipes.pkl"))[ingredient_name]
 
     f1_paired = {}
 
@@ -109,10 +109,10 @@ def save_cos_similarities_to_pkl():
     ingredient labels for the columns and rows. The format of the sets is pandas DataFrame.
     """
 
-    recipe_ingrX_bin = np.transpose(pd.read_pickle("data/recipe_ingr_bin.pkl"))
+    recipe_ingrX_bin = np.transpose(pd.read_pickle(os.path.join(path,"data/recipe_ingr_bin.pkl")))
 
-    ingr_comp_bin = pd.read_pickle("data/ingr_comp_bin.pkl")
-    ingr_inters = pd.read_pickle("data/ingr_inters.pkl")
+    ingr_comp_bin = pd.read_pickle(os.path.join(path,"data/ingr_comp_bin.pkl"))
+    ingr_inters = pd.read_pickle(os.path.join(path,"data/ingr_inters.pkl"))
 
     cos_recipes = pd.DataFrame(get_recipe_ingredients_cos_similarity(recipe_ingrX_bin))
     cos_compounds = pd.DataFrame(get_recipe_ingredients_cos_similarity(ingr_comp_bin))
@@ -123,8 +123,8 @@ def save_cos_similarities_to_pkl():
     cos_compounds.columns = ingr_inters.values[:, 0]
     cos_compounds.index = ingr_inters.values[:, 0]
 
-    cos_recipes.to_pickle("cos_recipes.pkl")
-    cos_compounds.to_pickle("cos_compounds.pkl")
+    cos_recipes.to_pickle(os.path.join(path,"cos_recipes.pkl"))
+    cos_compounds.to_pickle(os.path.join(path,"cos_compounds.pkl"))
 
 
 
