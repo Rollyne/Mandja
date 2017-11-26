@@ -8,15 +8,44 @@ from collections import OrderedDict
 from math import isnan
 
 
-def get_top_replacements():
-    # TODO: Get the top n replacements for an ingredient
+def get_top_replacements(ingredient_name: str, top_n: int = 5):
 
-    pass
+    if not os.path.exists("cos_compounds.pkl"):
+        save_cos_similarities_to_pkl() # This creates both files even though I need just one of them
+
+    cos_comp_ingr = pd.read_pickle("cos_compounds.pkl")[ingredient_name]
+
+    d_descending = OrderedDict(sorted(cos_comp_ingr.items(), key=lambda kv: kv[1], reverse=True))
+
+    result = {}
+
+    i = 0
+    for k, v in d_descending.items():
+        i += 1
+        if (i > top_n + 1):
+            break
+        if (k != ingredient_name):
+            result[k] = v
+
+    return result
 
 
-def get_top_recommendations_multiple():
-    # TODO: Get the top n additions to a set of ingredients
-    pass
+def get_top_recommendations_multiple(ingredient_names: [str], top_n: int = 5):
+
+    top_results = {}
+
+    for ingredient_name in ingredient_names:
+        result = get_top_matches(ingredient_name, top_n)
+
+        for k, v in result.items():
+            if k in top_results.keys():
+                top_results[k] = (top_results[k] + v) / 2 #Keeping the overall value under 1 with '/ 2'
+            else:
+                top_results[k] = v
+
+    top_results = sorted(top_results.items(), key=lambda kv: kv[1], reverse=True)
+
+    return top_results[0:top_n]
 
 
 def get_recipe_ingredients_cos_similarity(ingrX_bin: np.ndarray):
@@ -68,7 +97,8 @@ def get_top_matches(ingredient_name: str, top_n: int = 5):
         i += 1
         if (i > top_n+1):
             break
-        result[k] = v
+        if (k != ingredient_name):
+            result[k] = v
 
     return result
 
@@ -99,10 +129,17 @@ def save_cos_similarities_to_pkl():
 
 
 if __name__ == "__main__":
+    print("Top Matches:")
     print(get_top_matches(input("Ingredient: "), int(input("Top n: "))))
 
+    print("Top Replacements")
+    print(get_top_replacements(input("Ingredient: "), int(input("Top n: "))))
 
+    ingredients_list = ["beer", "potato"]
 
+    print("Top Recommendations: (For a list of ingredients)")
+    print(ingredients_list)
+    print(get_top_recommendations_multiple(ingredients_list, int(input("Top n: "))))
 
 
 
