@@ -1,1 +1,1 @@
-web: python fla_net/manage.py runserver 0.0.0.0:5000
+web: python fla_net/manage.py runserver
