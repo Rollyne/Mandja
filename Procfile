@@ -1,1 +1,1 @@
-web: python fla_net/manage.py runserver
+web: python fla_net/manage.py runserver localhost:7000
