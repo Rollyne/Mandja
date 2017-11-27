@@ -1,1 +1,1 @@
-web: python fla_net/manage.py runserver localhost:7000
+web: python fla_net/manage.py runserver "0.0.0.0:$PORT"
