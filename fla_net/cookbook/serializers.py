@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Recipe, Comment, Ingredient, InRecipe, Description, RecipeImage
+from .models import Recipe, Comment, Ingredient, InRecipe, Description, RecipeImage, Couple, InCouple
 from accounts.serializers import AccountSerializer
 
 
@@ -76,3 +76,38 @@ class RecipeSerializer(serializers.ModelSerializer):
         model = Recipe
         fields = [ 'id', 'title', 'date_published', 'date_last_updated', 'cooking_time', 'hands_on_time', 'ingredients', 'descriptions', 'comments', 'author', 'images']
 
+
+class RecipeIndexSerializer(serializers.ModelSerializer):
+    images = RecipeImageSerializer(source='recipeimage_set', many=True, read_only=True)
+    author = AccountSerializer('author', required=False, read_only=True)
+    date_published = serializers.DateTimeField(format='%d/%m/%Y', read_only=True)
+
+    class Meta:
+        model = Recipe
+        fields = ['id', 'title', 'images','date_published', 'author']
+
+
+class IncoupleSerializer(serializers.ModelSerializer):
+    ingredient_id = serializers.SlugField(source='ingredient.id', required=False)
+    ingredient_name = serializers.SlugField(source='ingredient.name', required=False)
+
+    class Meta:
+        model = InRecipe
+        fields = ['id', 'ingredient_id', 'ingredient_name']
+
+    def create(self, validated_data):
+        ingredient_data = validated_data.pop('ingredient')
+        ingredient = Ingredient.objects.get(name=ingredient_data['name'])
+
+        incouple = InCouple.objects.create(ingredient=ingredient, **validated_data)
+        return incouple
+
+
+class CoupleSerializer(serializers.ModelSerializer):
+    date_published = serializers.DateTimeField(format='%d/%m/%Y',read_only=True)
+    date_last_updated = serializers.DateTimeField(format='%d/%m/%Y', read_only=True)
+    ingredients = IncoupleSerializer(source='incouple_set', many=True, required=False, read_only=True)
+
+    class Meta:
+        model = Couple
+        exclude = ('author',)

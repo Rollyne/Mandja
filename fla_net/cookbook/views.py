@@ -1,24 +1,26 @@
 from collections import OrderedDict
 
+from django.http import Http404
 from numpy import unicode
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import api_view, renderer_classes, permission_classes, authentication_classes, \
     parser_classes
-from rest_framework.exceptions import ValidationError
+from rest_framework.exceptions import ValidationError, PermissionDenied
+from rest_framework.pagination import PageNumberPagination
 from rest_framework.parsers import FileUploadParser, MultiPartParser, FormParser, JSONParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
-from rest_framework import generics
+from rest_framework import generics, filters
 from rest_framework.request import Request
 
 from fla_net.views import BaseManageView
 
 from accounts.models import Account
-from .models import Recipe, Comment, Ingredient, InRecipe, RecipeImage
+from .models import Recipe, Comment, Ingredient, InRecipe, RecipeImage, Couple, InCouple
 from .serializers import RecipeSerializer, CommentSerializer, IngredientSerializer, InrecipeSerializer, \
-    DescriptionSerializer, RecipeImageSerializer
+    DescriptionSerializer, RecipeImageSerializer, CoupleSerializer, IncoupleSerializer, RecipeIndexSerializer
 
 import ast
 
@@ -51,7 +53,41 @@ class MultipartFormencodeParser(parsers.MultiPartParser):
 #@renderer_classes((JSONRenderer, ))
 class RecipeList(generics.ListAPIView):
     queryset = Recipe.objects.all()
-    serializer_class = RecipeSerializer
+    serializer_class = RecipeIndexSerializer
+    pagination_class = PageNumberPagination
+    pagination_class.page_size = 10
+    filter_backends = (filters.SearchFilter, filters.OrderingFilter)
+    search_fields = ('title',)
+    ordering = ('date_published',)
+
+
+    # def list(self, request, *args, **kwargs):
+    #     queryset = Recipe.objects.all()
+    #
+    #     if 'search' in request.query_params:
+    #         search = request.query_params['search']
+    #         queryset = queryset.filter(title__contains=search)
+    #
+    #     context = {
+    #         'request': Request(request)
+    #     }
+    #
+    #     serializer = self.get_serializer(queryset, many=True, context=context)
+    #     return Response(serializer.data)
+
+class RecipeLatestList(generics.ListAPIView):
+    queryset = Recipe.objects.all()
+    serializer_class = RecipeIndexSerializer
+    def list(self, request, *args, **kwargs):
+        n = kwargs['n']
+        queryset = Recipe.objects.order_by('-date_published')[:int(n)]
+
+        context = {
+            'request': Request(request)
+        }
+
+        serializer = self.get_serializer(queryset, many=True, context=context)
+        return Response(serializer.data)
 
 
 @authentication_classes((TokenAuthentication,))
@@ -87,9 +123,9 @@ class RecipeCreate(generics.CreateAPIView):
 
             return Response({'message': 'Success!'}, status=200)
         else:
-            return Response([recipe_serializer.errors,
+            raise ValidationError(detail=[recipe_serializer.errors,
                              ingredients_serializer.errors,
-                             descriptions_serializer.errors,], status=400)
+                             descriptions_serializer.errors,])
 
 
 #@renderer_classes((JSONRenderer, ))
@@ -132,6 +168,7 @@ class CommentList(generics.ListCreateAPIView):
 
         serializer = CommentSerializer(queryset, many=True, context=context)
         return Response(serializer.data)
+
     def perform_create(self, serializer, *args, **kwargs):
         recipe_id = self.request.parser_context['kwargs']['pk']
         serializer.save(author=Account.objects.get(user__id=self.request.user.id), recipe=Recipe.objects.get(id=recipe_id))
@@ -141,9 +178,7 @@ class CommentList(generics.ListCreateAPIView):
 @renderer_classes((JSONRenderer, ))
 class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CommentSerializer
-
-    def get_queryset(self):
-        return Comment.objects.all()
+    queryset = Comment.objects.all()
 
 # -----------------------------------------------------
 
@@ -200,14 +235,94 @@ class InrecipeList(generics.ListCreateAPIView):
 
 # -----------------------------------------------------
 
+class CouplesView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Couple.objects.all()
+    serializer_class = CoupleSerializer
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
+
+class CouplesList(generics.ListCreateAPIView):
+    serializer_class = CoupleSerializer
+    queryset = Couple.objects.all()
+    authentication_classes = (TokenAuthentication,)
+    permission_classes = (IsAuthenticated,)
+
+    def perform_create(self, serializer):
+        serializer.save(author=Account.objects.get(user__id=self.request.user.id))
+
+
+    def list(self, request, *args, **kwargs):
+        queryset = Couple.objects.filter(author__user__id=request.user.id)
+
+        context = {
+            'request': Request(request)
+        }
+
+        serializer = CoupleSerializer(queryset, many=True, context=context)
+        return Response(serializer.data)
+
+
+class InCoupleCreate(generics.CreateAPIView):
+    serializer_class = IncoupleSerializer
+    queryset = InCouple.objects.all()
+    authentication_classes = (TokenAuthentication,)
+
+
+    def perform_create(self, serializer, *args, **kwargs):
+        couple_id = self.request.parser_context['kwargs']['pk']
+        couple = Couple.objects.get(id=couple_id)
+        if( couple.author.user.id == self.request.user.id):
+            serializer.save(couple=couple)
+        else:
+            raise PermissionDenied(detail="You do not own this couple.")
+
+
+class InCoupleDelete(generics.DestroyAPIView):
+    serializer_class = IncoupleSerializer
+    queryset = InCouple.objects.all()
+    authentication_classes = (TokenAuthentication,)
+
+    def perform_destroy(self, instance):
+        couple_id = self.request.parser_context['kwargs']['c_pk']
+        couple = Couple.objects.get(id=couple_id)
+
+        if (not couple.author.user.id == self.request.user.id):
+            raise PermissionDenied(detail="You do not own this couple.")
+        else:
+            instance.delete()
+
+    def get_object(self):
+        try:
+            return InCouple.objects.get(pk= self.request.parser_context['kwargs']['pk'])
+        except InCouple.DoesNotExist:
+            raise Http404
+
+# -----------------------------------------------------
+
 from prediction_models import ingredient_rec_system
 from rest_framework.views import APIView
 class GetSubstitutes(APIView):
+    authentication_classes = (TokenAuthentication,)
 
     def get(self, request, format=None):
         ingredient = request.query_params['ingredient']
         n = request.query_params['amount']
-
         result = ingredient_rec_system.get_top_replacements(ingredient_name=ingredient, top_n=int(n))
         result_desc = OrderedDict(sorted(result.items(), key=lambda kv: kv[1], reverse=True))
         return Response(result_desc, status=200)
+
+
+class GetRecommendations(APIView):
+    authentication_classes = (TokenAuthentication,)
+    parser_classes(JSONParser,)
+
+    def post(self, request, format=None):
+        ingredients = request.data['ingredients']
+        n = request.data['amount']
+        if(len(ingredients) == 1):
+            result = ingredient_rec_system.get_top_matches(ingredient_name=ingredients[0], top_n=int(n))
+        else:
+            result = ingredient_rec_system.get_top_recommendations_multiple(ingredient_names=ingredients, top_n=int(n))
+            result = OrderedDict(sorted(result.items(), key=lambda kv: kv[1], reverse=True))
+        return Response(result, status=200)

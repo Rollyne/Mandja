@@ -14,6 +14,8 @@ class RecipeDetailActions {
             'commentContentValidationFail',
             'getRecipeCommentsSuccess',
             'getRecipeCommentsFail',
+            'getSubstitutesSuccess',
+            'getSubstitutesFail',
         );
     }
 
@@ -51,7 +53,6 @@ class RecipeDetailActions {
     }
 
     postComment(data, recipeId) {
-        console.log(data);
         const request = {
             url: `/api/cookbook/${recipeId}/comments/`,
             method: 'POST',
@@ -61,7 +62,6 @@ class RecipeDetailActions {
                 Authorization: `Token ${Auth.getToken()}`,
             },
         };
-        console.log(request);
         $.ajax(request)
             .done((comment) => {
                 this.postCommentSuccess(comment);
@@ -86,6 +86,24 @@ class RecipeDetailActions {
         $.ajax(request)
             .done((comments) => { this.getRecipeCommentsSuccess(comments); })
             .fail((error) => { this.getRecipeCommentsFail(error); });
+        return true;
+    }
+
+    getIngredientSubstitutes(ingredientName) {
+        const csrftoken = this.getCookie('csrftoken');
+
+        const request = {
+            url: `api/cookbook/substitutes/?ingredient=${ingredientName}&amount=5`,
+            method: 'get',
+            contentType: 'application/json',
+            headers: {
+                'X-CSRFToken': csrftoken,
+            },
+        };
+
+        $.ajax(request)
+            .done((substitutes) => { this.getSubstitutesSuccess(substitutes); })
+            .fail((error) => { this.getSubstitutesFail(error); });
         return true;
     }
 }

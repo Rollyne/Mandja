@@ -43,9 +43,19 @@ def get_top_recommendations_multiple(ingredient_names: [str], top_n: int = 5):
             else:
                 top_results[k] = v
 
-    top_results = sorted(top_results.items(), key=lambda kv: kv[1], reverse=True)
+    top_results = OrderedDict(sorted(top_results.items(), key=lambda kv: kv[1], reverse=True))
+    if top_n < 0:
+        [top_results.pop(name) for name in ingredient_names]
+        return top_results
+    top_results_sliced = {}
+    i=0
+    for k, v in top_results.items():
+        i += 1
+        if (i > top_n + 1):
+            break
+        top_results_sliced[k] = v
 
-    return top_results[0:top_n]
+    return top_results_sliced
 
 
 def get_recipe_ingredients_cos_similarity(ingrX_bin: np.ndarray):
@@ -90,8 +100,11 @@ def get_top_matches(ingredient_name: str, top_n: int = 5):
 
     d_descending = OrderedDict(sorted(f1_paired.items(), key=lambda kv: kv[1], reverse=True))
 
-    result = {}
+    if top_n < 0:
+        d_descending.pop(ingredient_name)
+        return d_descending
 
+    result = {}
     i = 0
     for k, v in d_descending.items():
         i += 1

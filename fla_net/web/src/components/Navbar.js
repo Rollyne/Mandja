@@ -31,7 +31,7 @@ class Navbar extends React.Component {
     render() {
         const authenticatedOptions = Auth.isUserAuthenticated() ? (
             <li>
-                <Link to="/recipes/add">Add Recipe</Link>
+                <Link to="/couples">Couples</Link>
             </li>
         ) : null;
         return (
@@ -48,13 +48,14 @@ class Navbar extends React.Component {
                         <span className="icon-bar" />
                     </button>
                     <Link to="/" className="navbar-brand">
-                        FlaNet
+                        Mandja
                     </Link>
                 </div>
                 <div id="navbar" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
                         <li>
                             <Link to="/">Home</Link>
+                            <Link to="/recipes">Recipes</Link>
                         </li>
                         {authenticatedOptions}
                     </ul>

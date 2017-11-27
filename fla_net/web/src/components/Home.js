@@ -1,5 +1,6 @@
 import React from 'react';
 
+import alt from '../alt';
 import HomeStore from '../stores/HomeStore';
 import HomeActions from '../actions/HomeActions';
 import RecipeCard from './Recipe/RecipeCard';
@@ -24,6 +25,7 @@ class Home extends React.Component {
 
     componentWillUnmount() {
         HomeStore.unlisten(this.onChange);
+        alt.recycle(HomeStore);
     }
 
     render() {
@@ -35,7 +37,7 @@ class Home extends React.Component {
         return (
             <div className="container">
                 <h3 className="text-center">Welcome to
-                    <strong> FlaNet</strong>
+                    <strong> Mandja</strong>
                 </h3>
                 <div>
                     {this.state.error}

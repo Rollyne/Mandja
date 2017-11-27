@@ -12,7 +12,6 @@ import alt from '../../alt';
 import RecipeDetailStore from '../../stores/Recipe/RecipeDetailStore';
 import RecipeDetailActions from '../../actions/Recipe/RecipeDetailActions';
 import CommentCard from './CommentCard';
-import SubstitutesModal from './SubstitutesModal';
 
 const items = [
     {
@@ -95,7 +94,9 @@ class RecipeDetail extends Component {
                 Object.keys(ingredients).map(i =>
                     rendered.push((
                         <IngredientCard
-                            key={i}
+                            getSubstitutes={RecipeDetailActions.getIngredientSubstitutes}
+                            substitutes={this.state.substitutes}
+                            key={ingredients[i].ingredient_id}
                             quantity={ingredients[i].quantity}
                             unit={ingredients[i].unit}
                             ingredient={ingredients[i].ingredient_name.replace('_', ' ')} />
@@ -106,7 +107,6 @@ class RecipeDetail extends Component {
         return (
             <ul className="list-group">
                 {rendered}
-                <SubstitutesModal />
             </ul>
         );
     }
@@ -153,7 +153,8 @@ class RecipeDetail extends Component {
                     activeIndex={this.state.activeIndex}
                     next={this.next}
                     previous={this.previous}
-                    autoPlay={false}>
+                    autoPlay={false}
+                    interval={false}>
                     <CarouselIndicators
                         items={this.state.recipe.images}
                         activeIndex={this.state.activeIndex}
@@ -193,13 +194,40 @@ class RecipeDetail extends Component {
                         by
                         <a href=""> {this.state.recipe.author.user.username}</a>
                     </p>
-                    <p>{this.state.recipe.date_published}</p>
+                    <p><small>{this.state.recipe.date_published}</small></p>
                     <hr />
-                    <h3 className="mt-0">Ingredients</h3>
-                    {this.renderIngredients(this.state.recipe.ingredients)}
+                    <div className="well">
+                        <h3 className="mt-0">Details</h3>
+                        <hr />
+                        <ul className="list-group">
+                            Overall time
+                            <li className="justify-content-between input-group">
+                                <span alt="Hands on time" className="input-group-addon"><span className="glyphicon glyphicon-dashboard" /></span>
+                                <div className="form-control">{this.state.recipe.hands_on_time + this.state.recipe.cooking_time} minutes</div>
+                            </li>
+                            <br />
+                            Hands on time
+                            <li className="justify-content-between input-group">
+                                <span alt="Hands on time" className="input-group-addon"><span className="fa fa-hand-spock-o" /></span>
+                                <div className="form-control">{this.state.recipe.hands_on_time} minutes</div>
+                            </li>
+                            <br />
+                            Cooking time
+                            <li className="justify-content-between input-group">
+                                <span className="input-group-addon"><span className="glyphicon glyphicon-fire" /></span>
+                                <div className="form-control">{this.state.recipe.cooking_time} minutes</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="well">
+                        <h3 className="mt-0">Ingredients</h3>
+                        {this.renderIngredients(this.state.recipe.ingredients)}
+                    </div>
                     <hr />
-                    <h3 className="mt-0">Descriptions</h3>
-                    {this.renderDescriptions(this.state.recipe.descriptions)}
+                    <div className="well">
+                        <h3 className="mt-0">Instructions</h3>
+                        {this.renderDescriptions(this.state.recipe.descriptions)}
+                    </div>
                 </div>
                 <hr />
                 <div className="container">

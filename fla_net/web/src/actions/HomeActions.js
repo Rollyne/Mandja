@@ -13,7 +13,7 @@ class HomeActions {
 
     getLatestRecipes() {
         const request = {
-            url: '/api/cookbook/',
+            url: '/api/cookbook/latest/10/',
             method: 'get',
             accept: 'application/json',
         };

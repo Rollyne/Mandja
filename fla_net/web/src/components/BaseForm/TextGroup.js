@@ -5,7 +5,7 @@ const TextGroup = props => (
         <label className="control-label" htmlFor={props.name}>{ props.label }</label>
         <input
             type={props.type}
-            className="form-control"
+            className={`form-control ${props.className}`}
             value={props.value}
             onChange={props.handleChange}
             name={props.name}

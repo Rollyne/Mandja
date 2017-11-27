@@ -48,7 +48,7 @@ export default class NavbarUserMenu extends React.Component {
             userMenu = (
                 <ul className="nav navbar-nav pull-right">
                     <li>
-                        <a>Hello, {this.state.profile.user.username} </a>
+                        Hello, {this.state.profile.user.username}
                     </li>
                     <li>
                         <Link to="/profile">Profile</Link>

@@ -19,7 +19,7 @@ export default class UserProfile extends React.Component {
 
     componentDidMount() {
         UserStore.listen(this.onChange);
-        UserActions.getCurrentUser();
+        UserActions.getCurrentUser(this.props.match.params.id);
     }
 
     componentWillUnmount() {
@@ -29,12 +29,49 @@ export default class UserProfile extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="container container-fluid profile-container">
-                    <div className="profile-img" />
-                    <div className="profile-info clearfix">
-                        <h2><strong>{this.state.profile.user.username}</strong></h2>
-                        <h2><strong>{this.state.profile.user.email}</strong></h2>
+            <div className="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6 animated fadeInUp">
+                <div className="well profile">
+                    <div className="col-sm-12">
+                        <div className="col-xs-12 col-sm-8">
+                            <h2>{this.state.profile.user.username}</h2>
+                            <p> {this.state.profile.user.first_name} {this.state.profile.user.last_name}</p>
+                            <p><strong>E-mail: </strong> {this.state.profile.user.email}</p>
+                            {/* <p><strong>Skills: </strong> */}
+                            {/* <span className="tags">html5</span> */}
+                            {/* <span className="tags">css3</span> */}
+                            {/* <span className="tags">jquery</span> */}
+                            {/* <span className="tags">bootstrap3</span> */}
+                            {/* </p> */}
+                        </div>
+                        <div className="col-xs-12 col-sm-4 text-center" />
+                    </div>
+                    <div className="col-xs-12 divider text-center">
+                        <div className="col-xs-12 col-sm-4 emphasis">
+                            <h2><strong>{this.state.profile.recipe_count}</strong></h2>
+                            <p>
+                                <small>Recipes</small>
+                            </p>
+                            {/* <button className="btn btn-success btn-block">
+                            <span className="fa fa-plus-circle" /> Follow */}
+                            {/* </button> */}
+                        </div>
+                        <div className="col-xs-12 col-sm-4 emphasis">
+                            <h2><strong>{this.state.profile.couple_count}</strong></h2>
+                            <p>
+                                <small>Couples</small>
+                            </p>
+                        </div>
+                        {/* <div className="col-xs-12 col-sm-4 emphasis"> */}
+                        {/* <h2><strong>43</strong></h2> */}
+                        {/* <p> */}
+                        {/* <small>Snippets</small> */}
+                        {/* </p> */}
+                        {/* <div className="btn-group dropup btn-block"> */}
+                        {/* <button type="button" className="btn btn-primary">
+                                <span className="fa fa-gear" /> Options */}
+                        {/* </button> */}
+                        {/* </div> */}
+                        {/* </div> */}
                     </div>
                 </div>
             </div>

@@ -15,6 +15,9 @@ class IngredientCard extends React.Component {
     }
 
     toggle() {
+        if (!this.state.modal) {
+            this.props.getSubstitutes(this.props.ingredient.replace(' ', '_'));
+        }
         this.setState({
             modal: !this.state.modal,
         });
@@ -28,7 +31,11 @@ class IngredientCard extends React.Component {
                     <span className="input-group-addon">{this.props.unit}</span>
                     <div className="form-control">{this.props.ingredient}</div>
 
-                    <SubstitutesModal show={this.state.modal} toggle={this.toggle} ingredient={this.props.ingredient} />
+                    <SubstitutesModal
+                        show={this.state.modal}
+                        toggle={this.toggle}
+                        ingredient={this.props.ingredient}
+                        substitutes={this.props.substitutes} />
                 </li>
             </a>
         );

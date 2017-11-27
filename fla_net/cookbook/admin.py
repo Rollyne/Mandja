@@ -5,7 +5,9 @@ from .models import *
 
 admin.site.register(Recipe)
 admin.site.register(InRecipe)
-admin.site.register(Account)
 admin.site.register(Description)
 admin.site.register(Ingredient)
 admin.site.register(Comment)
+admin.site.register(InCouple)
+admin.site.register(Couple)
+admin.site.register(Vote)

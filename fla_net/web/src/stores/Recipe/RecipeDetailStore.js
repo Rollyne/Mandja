@@ -23,6 +23,7 @@ class RecipeDetailStore {
         };
 
         this.content = '';
+        this.substitutes = {};
     }
 
     onGetRecipeSuccess(recipe) {
@@ -59,6 +60,13 @@ class RecipeDetailStore {
     }
 
     onGetRecipeCommentsFail(error) {
+        toastr.error(error);
+    }
+
+    onGetSubstitutesSuccess(substitutes) {
+        this.substitutes = substitutes;
+    }
+    onGetSubstitutesFail(error) {
         toastr.error(error);
     }
 }

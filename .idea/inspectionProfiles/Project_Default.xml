@@ -8,6 +8,7 @@
           <option value="fla_net.cookbook.models.accounts" />
           <option value="fla_net.cookbook.views.accounts" />
           <option value="fla_net.cookbook.serializers.accounts" />
+          <option value="fla_net.cookbook.views.prediction_models" />
         </list>
       </option>
     </inspection_tool>
