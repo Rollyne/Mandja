@@ -21,8 +21,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '_-*^!zpz@@g_w5i(q9jy+8p0r)a^q7ep!qv@3kdvld$*ax_5c2'
-with open('secret_key') as f:
-    SECRET_KEY = f.read().strip()
+# with open('secret_key') as f:
+#     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -145,4 +145,4 @@ FIXTURE_DIRS = [
 ]
 
 MEDIA_ROOT = 'cookbook/media/'
-MEDIA_URL = '/media/'
+MEDIA_URL = '/api/media/'
