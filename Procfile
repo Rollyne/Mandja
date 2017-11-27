@@ -1,1 +1,1 @@
-web: gunicorn fla_net.fla_net.wsgi --log-file -
+web: python fla_net/manage.py runserver 0.0.0.0:5000
