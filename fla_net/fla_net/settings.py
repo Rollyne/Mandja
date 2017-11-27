@@ -132,6 +132,9 @@ STATIC_URL = '/static/'
 
 REACT_APP_DIR = os.path.join(BASE_DIR, 'web')
 
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+
 STATICFILES_DIRS = [
     os.path.join(REACT_APP_DIR, 'build_v1', 'static'),
 ]
