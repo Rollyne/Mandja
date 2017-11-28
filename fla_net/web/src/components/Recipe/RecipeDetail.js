@@ -126,7 +126,7 @@ class RecipeDetail extends Component {
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                     key={item.picture}
-                    src={item.picture.picture.replace('/', '/api/')}
+                    src={item.picture.picture}
                     altText=""
                     interval="false"
                     data-interval="false" />));

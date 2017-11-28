@@ -140,4 +140,4 @@ FIXTURE_DIRS = [
 ]
 
 MEDIA_ROOT = 'cookbook/media/'
-MEDIA_URL = '/media/'
+MEDIA_URL = '/api/media/'
