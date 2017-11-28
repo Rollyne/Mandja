@@ -10,7 +10,10 @@ const RecipeCard = props => (
         <div
             className="eventImage"
             style={{
-                backgroundImage: `url(${props.recipe.images.length > 0 ? props.recipe.images[0].picture : null})`,
+                backgroundImage: `url(${
+                    props.recipe.images.length > 0 ?
+                        props.recipe.images[0].picture.replace('/', '/api/')
+                        : null})`,
             }} />
         <div className="eventDetails">
 
