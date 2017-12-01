@@ -15,11 +15,14 @@ urlpatterns = [
 
     url(r'^cookbook/(?P<pk>[0-9]+)/ingredients/$', views.InrecipeList.as_view(), name='recipe-ingredient-list'),
 
+    url(r'^cookbook/categories/$', views.CategoriesView.as_view(), name='categories-list'),
+
     url(r'^cookbook/ingredients/$', views.IngredientList.as_view(), name='ingredient-list'),
     url(r'^cookbook/ingredients/(?P<pk>[0-9]+)/$', views.IngredientDetail.as_view(), name='ingredient-detail'),
 
     url(r'^cookbook/substitutes/$', views.GetSubstitutes.as_view(), name='substitutes-list'),
     url(r'^cookbook/recommendations/$', views.GetRecommendations.as_view(), name='recommendations-list'),
+    url(r'^cookbook/classifyregion/$', views.ClassifyRegion.as_view(), name='recommendations-list'),
 
     url(r'^cookbook/couples/(?P<pk>[0-9]+)/$', views.CouplesView.as_view(), name='couples-view'),
     url(r'^cookbook/couples/(?P<pk>[0-9]+)/ingredients/$', views.InCoupleCreate.as_view(), name='couples-ingredients'),

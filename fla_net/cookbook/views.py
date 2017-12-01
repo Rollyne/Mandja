@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+from django.core.exceptions import ObjectDoesNotExist
 from django.http import Http404
 from numpy import unicode
 from rest_framework.authentication import TokenAuthentication
@@ -15,12 +16,15 @@ from rest_framework.reverse import reverse
 from rest_framework import generics, filters
 from rest_framework.request import Request
 
+import json
+
 from fla_net.views import BaseManageView
 
 from accounts.models import Account
-from .models import Recipe, Comment, Ingredient, InRecipe, RecipeImage, Couple, InCouple
+from .models import Recipe, Comment, Ingredient, InRecipe, RecipeImage, Couple, InCouple, Category
 from .serializers import RecipeSerializer, CommentSerializer, IngredientSerializer, InrecipeSerializer, \
-    DescriptionSerializer, RecipeImageSerializer, CoupleSerializer, IncoupleSerializer, RecipeIndexSerializer
+    DescriptionSerializer, RecipeImageSerializer, CoupleSerializer, IncoupleSerializer, RecipeIndexSerializer, \
+    CategorySerializer
 
 import ast
 
@@ -100,19 +104,38 @@ class RecipeCreate(generics.CreateAPIView):
 
     def create(self, request, *args, **kwargs):
         recipe_data = request.data
+
+        ingr_validation = "You should add ingredients."
+        instr_validation = "You should add instructions."
+
+        if 'ingredients' not in recipe_data:
+            raise ValidationError(ingr_validation)
+        if 'descriptions' not in recipe_data:
+            raise ValidationError(instr_validation)
+
         ingredients_data = ast.literal_eval(recipe_data.pop('ingredients'))
-        descriptions_data = ast.literal_eval(recipe_data.pop('descriptions'))
+        instructions_data = ast.literal_eval(recipe_data.pop('descriptions'))
+
+        category_data = ast.literal_eval(recipe_data.pop('category'))
+        category = Category.objects.get(id=category_data['id'])
+
+        if len(ingredients_data) == 0:
+            raise ValidationError(ingr_validation)
+
+        if len(instructions_data) == 0:
+            raise ValidationError(instr_validation)
+
 
         recipe_serializer = RecipeSerializer(data=recipe_data)
         ingredients_serializer = InrecipeSerializer(data=ingredients_data, many=True)
-        descriptions_serializer = DescriptionSerializer(data=descriptions_data, many=True)
+        descriptions_serializer = DescriptionSerializer(data=instructions_data, many=True)
 
         r_is_valid = recipe_serializer.is_valid()
         i_is_valid = ingredients_serializer.is_valid()
         d_is_valid = descriptions_serializer.is_valid()
 
         if r_is_valid and i_is_valid and d_is_valid:
-            recipe_serializer.save(author=Account.objects.get(user__id=request.user.id))
+            recipe_serializer.save(author=Account.objects.get(user__id=request.user.id), category=category)
             recipe = recipe_serializer.instance
             descriptions_serializer.save(recipe=recipe)
             ingredients_serializer.save(recipe=recipe)
@@ -131,9 +154,15 @@ class RecipeCreate(generics.CreateAPIView):
 #@renderer_classes((JSONRenderer, ))
 class RecipeDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = RecipeSerializer
+    queryset = Recipe.objects.all()
+    authentication_classes = (TokenAuthentication,)
 
     def get(self, request, *args, **kwargs):
-        queryset = Recipe.objects.get(id=kwargs['pk'])
+        recipe_id = kwargs['pk']
+        try:
+            queryset = Recipe.objects.get(id=recipe_id)
+        except ObjectDoesNotExist:
+            raise Http404
 
         context = {
             'request': Request(request)
@@ -141,6 +170,12 @@ class RecipeDetail(generics.RetrieveUpdateDestroyAPIView):
 
         serializer = RecipeSerializer(queryset, context=context)
         return Response(serializer.data)
+
+    def perform_destroy(self, instance):
+        if (not instance.author.user.id == self.request.user.id):
+            raise PermissionDenied(detail="You do not own this recipe.")
+        else:
+            instance.delete()
 
 
 class RecipeManageView(BaseManageView):
@@ -179,6 +214,14 @@ class CommentList(generics.ListCreateAPIView):
 class CommentDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CommentSerializer
     queryset = Comment.objects.all()
+    authentication_classes = (TokenAuthentication,)
+
+
+    def perform_destroy(self, instance):
+        if (not instance.author.user.id == self.request.user.id):
+            raise PermissionDenied(detail="You do not own this comment.")
+        else:
+            instance.delete()
 
 # -----------------------------------------------------
 
@@ -191,6 +234,9 @@ class IngredientList(generics.ListCreateAPIView):
         if 'pk' in kwargs:
             id = kwargs['pk']
             queryset = Ingredient.objects.filter(recipe__id=id)
+        elif 'supported' in request.query_params:
+            supported = request.query_params['supported']
+            queryset = Ingredient.objects.filter(supported=supported)
         else:
             queryset = Ingredient.objects.all()
 
@@ -234,6 +280,12 @@ class InrecipeList(generics.ListCreateAPIView):
         return Response(serializer.data)
 
 # -----------------------------------------------------
+
+class CategoriesView(generics.ListAPIView):
+    serializer_class = CategorySerializer
+    queryset = Category.objects.all()
+
+#  -----------------------------------------------------
 
 class CouplesView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Couple.objects.all()
@@ -284,10 +336,8 @@ class InCoupleDelete(generics.DestroyAPIView):
     authentication_classes = (TokenAuthentication,)
 
     def perform_destroy(self, instance):
-        couple_id = self.request.parser_context['kwargs']['c_pk']
-        couple = Couple.objects.get(id=couple_id)
 
-        if (not couple.author.user.id == self.request.user.id):
+        if (not instance.author.user.id == self.request.user.id):
             raise PermissionDenied(detail="You do not own this couple.")
         else:
             instance.delete()
@@ -301,6 +351,7 @@ class InCoupleDelete(generics.DestroyAPIView):
 # -----------------------------------------------------
 
 from prediction_models import ingredient_rec_system
+from prediction_models import recipe_region_classification
 from rest_framework.views import APIView
 class GetSubstitutes(APIView):
     authentication_classes = (TokenAuthentication,)
@@ -325,4 +376,19 @@ class GetRecommendations(APIView):
         else:
             result = ingredient_rec_system.get_top_recommendations_multiple(ingredient_names=ingredients, top_n=int(n))
             result = OrderedDict(sorted(result.items(), key=lambda kv: kv[1], reverse=True))
+        return Response(result, status=200)
+
+import pandas as pd
+
+class ClassifyRegion(APIView):
+    authentication_classes = (TokenAuthentication,)
+    parser_classes(JSONParser,)
+
+    def post(self, request, format=None):
+        ingredients = request.data['ingredients']
+        if len(ingredients) == 0:
+            raise ValidationError('There should be at least one ingredient present to classify the region.')
+
+        result = recipe_region_classification.classify_region(X=pd.DataFrame(ingredients))
+
         return Response(result, status=200)

@@ -8,6 +8,7 @@ from accounts.models import Account
 
 class Ingredient(models.Model):
     name = models.CharField(max_length=50)
+    supported = models.BooleanField(default=False)
 
 
     def __str__(self):
@@ -31,7 +32,22 @@ class InCouple(models.Model):
         unique_together=('couple', 'ingredient')
 
 
+class Category(models.Model):
+    name = models.CharField(max_length=50, unique=True)
+    parent = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
+
+
 class Recipe(models.Model):
+
+    REGIONS = (
+        ('af', 'African'),
+        ('ea', 'East Asian'),
+        ('eeu', 'Eastern European'),
+        ('la', 'Latin American'),
+        ('mde', 'Middle Eastern'),
+        ('na', 'North American'),
+    )
+
     title = models.CharField(max_length=120)
     date_published = models.DateTimeField(default=timezone.now())
     date_last_updated = models.DateTimeField(default=timezone.now())
@@ -40,6 +56,9 @@ class Recipe(models.Model):
     author = models.ForeignKey(Account, on_delete=models.SET_NULL, null=True)
     ingredients = models.ManyToManyField(Ingredient, through='InRecipe')
     couple = models.ForeignKey(Couple, null=True, on_delete=models.SET_NULL, unique=True)
+    region = models.CharField(max_length=4, choices=REGIONS, null=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
+    servings = models.IntegerField(validators=[MinValueValidator(1)])
 
     def __str__(self):
         return self.title
@@ -56,15 +75,19 @@ class RecipeImage(models.Model):
 class InRecipe(models.Model):
 
     UNITS = (
-        ('ml', 'Mililiters'),
+        ('ml', 'Milliliters'),
         ('g', 'Grams'),
         ('l', 'Liters'),
         ('kg', 'Kilograms'),
+        ('cp', 'Cups'),
+        ('pc', 'Pieces'),
+        ('tsp', 'Teaspoons'),
+        ('tbsp', 'Tablespoons'),
     )
 
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
-    quantity = models.FloatField()
+    quantity = models.FloatField(validators=[MinValueValidator(0)])
     unit = models.CharField(max_length=2, choices=UNITS)
 
     def __str__(self):
