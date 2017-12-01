@@ -27,7 +27,7 @@ SECRET_KEY = '_-*^!zpz@@g_w5i(q9jy+8p0r)a^q7ep!qv@3kdvld$*ax_5c2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mandja.herokuapp.com']
 
 # Application definition
 
@@ -78,6 +78,7 @@ WSGI_APPLICATION = 'fla_net.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
+
 
 DATABASES = {
     'default': {
@@ -132,6 +133,9 @@ STATIC_URL = '/static/'
 
 REACT_APP_DIR = os.path.join(BASE_DIR, 'web')
 
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
+
 STATICFILES_DIRS = [
     os.path.join(REACT_APP_DIR, 'build_v1', 'static'),
 ]
@@ -145,4 +149,4 @@ FIXTURE_DIRS = [
 ]
 
 MEDIA_ROOT = 'cookbook/media/'
-MEDIA_URL = '/api/media/'
+MEDIA_URL = '/media/'
