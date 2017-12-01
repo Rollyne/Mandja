@@ -23,7 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^docs/', include_docs_urls(title='FlaNet API', description='RESTful API for FlaNet')),
 
-    url(r'^api/', include('cookbook.urls', namespace='cookbook')),
-    url(r'^api/', include('accounts.urls', namespace='accounts')),
-    url(r'^', views.WebAppView.as_view()),
+    url(r'^', include('cookbook.urls', namespace='cookbook')),
+    url(r'^', include('accounts.urls', namespace='accounts')),
+    # url(r'^', views.WebAppView.as_view()),
 ]
