@@ -84,6 +84,7 @@ class RecipeDetail extends Component {
                             key={ingredients[i].ingredient_id}
                             quantity={ingredients[i].quantity}
                             unit={ingredients[i].unit_display}
+                            supported={ingredients[i].supported}
                             ingredient={ingredients[i].ingredient_name.replace('_', ' ')} />
                     )));
             }

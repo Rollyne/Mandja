@@ -40,7 +40,6 @@ export default class RecipeModify extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        console.log(e);
 
         const title = this.state.recipe.title.trim();
         if (!title) {

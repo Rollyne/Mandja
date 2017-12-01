@@ -25,5 +25,5 @@ urlpatterns = [
 
     url(r'^', include('cookbook.urls', namespace='cookbook')),
     url(r'^', include('accounts.urls', namespace='accounts')),
-    url(r'^', views.WebAppView.as_view()),
+    # url(r'^', views.WebAppView.as_view()),
 ]

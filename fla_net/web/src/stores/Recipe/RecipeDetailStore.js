@@ -28,7 +28,7 @@ class RecipeDetailStore {
 
     onGetRecipeSuccess(recipe) {
         this.recipe = recipe;
-        console.log(recipe);
+        this.recipe.descriptions = recipe.descriptions.reverse();
     }
 
     onGetRecipeFail(error) {

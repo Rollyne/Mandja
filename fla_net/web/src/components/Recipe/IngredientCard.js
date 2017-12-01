@@ -25,7 +25,7 @@ class IngredientCard extends React.Component {
 
     render() {
         return (
-            <a onClick={this.toggle} style={{ cursor: 'pointer' }}>
+            <a onClick={this.props.supported === 'True' ? this.toggle : null} style={{ cursor: this.props.supported === 'True' ? 'pointer' : 'auto' }}>
                 <li className="justify-content-between input-group">
                     <span className="input-group-addon">{this.props.quantity}</span>
                     <span className="input-group-addon">{this.props.unit}</span>
