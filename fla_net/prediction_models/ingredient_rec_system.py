@@ -10,6 +10,16 @@ from math import isnan
 path = os.path.dirname(__file__)
 
 def get_top_replacements(ingredient_name: str, top_n: int = 5):
+    """
+    Gets the top ingredient matches for given ingredient based on the value
+    of the cosine similarity between the ingredients, compounds.
+    :param ingredient_name:
+    The name of the target ingredient.
+    :param top_n:
+    The number of ingredients that should be returned.
+    :return:
+    Returns a dictionary containing the top N ingredients with their similarity value.
+    """
     if not os.path.exists(os.path.join(path, "cos_compounds.pkl")):
         save_cos_similarities_to_pkl() # This creates both files even though I need just one of them
 
@@ -31,7 +41,16 @@ def get_top_replacements(ingredient_name: str, top_n: int = 5):
 
 
 def get_top_recommendations_multiple(ingredient_names: [str], top_n: int = 5):
-
+    """
+    Gets the top ingredient matches for a given list of ingredients based on the F1
+    of the cosine similarity between the ingredients, compounds and recipes.
+    :param ingredient_names:
+    The names of the target ingredients.
+    :param top_n:
+    The number of ingredients that should be returned.
+    :return:
+    Returns a dictionary containing the top N ingredients with their similarity value.
+    """
     top_results = {}
 
     for ingredient_name in ingredient_names:

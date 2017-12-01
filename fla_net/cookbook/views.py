@@ -392,3 +392,5 @@ class ClassifyRegion(APIView):
         result = recipe_region_classification.classify_region(X=pd.DataFrame(ingredients))
 
         return Response(result, status=200)
+
+
