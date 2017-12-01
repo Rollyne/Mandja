@@ -1,3 +1,5 @@
+import toastr from 'toastr';
+
 import FormActions from '../actions/FormActions';
 import UserActions from '../actions/UserActions';
 import alt from '../alt';
@@ -29,7 +31,7 @@ class FormStore {
         this.formSubmitState = 'has-success';
         this.usernameValidationState = '';
         this.passwordValidationState = '';
-        this.message = 'User registered successfully';
+        toastr.success('User registered successfully');
     }
 
     onRegisterUserFail(error) {

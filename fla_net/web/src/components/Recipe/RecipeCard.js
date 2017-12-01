@@ -7,11 +7,11 @@ const RecipeCard = props => (
 
     <div className="eventWrapper animated fadeInUp">
         <RecipeRating />
-        <div
+        <Link to={`recipes/${props.recipe.id}`}><div
             className="eventImage"
             style={{
                 backgroundImage: `url(${props.recipe.images.length > 0 ? props.recipe.images[0].picture : null})`,
-            }} />
+            }} /></Link>
         <div className="eventDetails">
 
 
@@ -23,7 +23,7 @@ const RecipeCard = props => (
 
             <p className="eventDesc">
                     Author: <Link to={`/profile/${props.recipe.author.id}`}>{props.recipe.author.user.username}</Link>
-                <div className="eventDate"><span>{props.recipe.date_published}</span></div>
+                <span style={{ display: 'block' }} className="eventDate"><span>{props.recipe.date_published}</span></span>
             </p>
             {/* <!--<footer className="eventPlace">--> */}
             {/* <!--<span>гр.Карлово, Централен Балкан</span>--> */}

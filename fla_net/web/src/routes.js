@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
-import RecipeAdd from './components/Recipe/RecipeAdd';
+import RecipeModify from './components/Recipe/RecipeModify/RecipeModify';
 import UserProfile from './components/User/UserProfile';
 import PrivateRoute from './components/common/PrivateRoute';
 import UserRegister from './components/User/UserRegister';
@@ -17,7 +17,8 @@ const Routes = () => (
     <Switch>
 
         <Route exact path="/" component={Home} />
-        <PrivateRoute path="/recipes/add" component={RecipeAdd} />
+        <PrivateRoute path="/recipes/add" component={RecipeModify} />
+        <Route path="/recipes/edit/:id" component={RecipeModify} />
         <Route path="/recipes/:id" component={RecipeDetail} />
         <Route path="/recipes" component={RecipeList} />
         <Route path="/register" component={UserRegister} />

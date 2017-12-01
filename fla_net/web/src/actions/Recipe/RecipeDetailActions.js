@@ -16,6 +16,10 @@ class RecipeDetailActions {
             'getRecipeCommentsFail',
             'getSubstitutesSuccess',
             'getSubstitutesFail',
+            'removeRecipeSuccess',
+            'removeRecipeFail',
+            'removeCommentSuccess',
+            'removeCommentFail',
         );
     }
 
@@ -104,6 +108,50 @@ class RecipeDetailActions {
         $.ajax(request)
             .done((substitutes) => { this.getSubstitutesSuccess(substitutes); })
             .fail((error) => { this.getSubstitutesFail(error); });
+        return true;
+    }
+
+    removeRecipe(id) {
+        const csrfToken = this.getCookie('csrftoken');
+        const request = {
+            url: `/api/cookbook/${id}/`,
+            method: 'DELETE',
+            headers: {
+                Authorization: `Token ${Auth.getToken()}`,
+                'X-CSRFToken': csrfToken,
+            },
+        };
+        $.ajax(request)
+            .done(() => {
+                this.removeRecipeSuccess(id);
+            })
+            .fail((error) => {
+                this.removeRecipeFail(error);
+                return false;
+            });
+
+        return true;
+    }
+
+    removeComment(id, index) {
+        const csrfToken = this.getCookie('csrftoken');
+        const request = {
+            url: `/api/cookbook/comments/${id}/`,
+            method: 'DELETE',
+            headers: {
+                Authorization: `Token ${Auth.getToken()}`,
+                'X-CSRFToken': csrfToken,
+            },
+        };
+        $.ajax(request)
+            .done(() => {
+                this.removeCommentSuccess(index);
+            })
+            .fail((error) => {
+                this.removeCommentFail(error);
+                return false;
+            });
+
         return true;
     }
 }

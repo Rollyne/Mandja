@@ -3,8 +3,9 @@ import {
     Carousel,
     CarouselItem,
     CarouselControl,
-    CarouselIndicators,
+    CarouselIndicators, Button,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import CommentForm from './CommentForm';
 import IngredientCard from './IngredientCard';
 import DescriptionCard from './DescriptionCard';
@@ -12,24 +13,6 @@ import alt from '../../alt';
 import RecipeDetailStore from '../../stores/Recipe/RecipeDetailStore';
 import RecipeDetailActions from '../../actions/Recipe/RecipeDetailActions';
 import CommentCard from './CommentCard';
-
-const items = [
-    {
-        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-        altText: 'Slide 1',
-        caption: 'Slide 1',
-    },
-    {
-        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-        altText: 'Slide 2',
-        caption: 'Slide 2',
-    },
-    {
-        src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-        altText: 'Slide 3',
-        caption: 'Slide 3',
-    },
-];
 
 class RecipeDetail extends Component {
     constructor(props) {
@@ -71,13 +54,15 @@ class RecipeDetail extends Component {
 
     next() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
+        const nextIndex = this.state.activeIndex ===
+        this.state.recipe.images.length - 1 ? 0 : this.state.activeIndex + 1;
         this.setState({ activeIndex: nextIndex });
     }
 
     previous() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
+        const nextIndex = this.state.activeIndex ===
+        0 ? this.state.recipe.images.length - 1 : this.state.activeIndex - 1;
         this.setState({ activeIndex: nextIndex });
     }
 
@@ -98,7 +83,7 @@ class RecipeDetail extends Component {
                             substitutes={this.state.substitutes}
                             key={ingredients[i].ingredient_id}
                             quantity={ingredients[i].quantity}
-                            unit={ingredients[i].unit}
+                            unit={ingredients[i].unit_display}
                             ingredient={ingredients[i].ingredient_name.replace('_', ' ')} />
                     )));
             }
@@ -175,7 +160,10 @@ class RecipeDetail extends Component {
             const sorted = comments;// comments.sort((kv1, kv2) => kv1[1] - kv2[1]);
             if (sorted.length > 0) {
                 Object.keys(sorted).map(i =>
-                    rendered.push((<CommentCard key={i} comment={sorted[i]} />
+                    rendered.push((<CommentCard
+                        key={i}
+                        comment={sorted[i]}
+                        removeClick={() => RecipeDetailActions.removeComment(sorted[i].id, i)} />
                     )));
             }
         }
@@ -183,7 +171,39 @@ class RecipeDetail extends Component {
         return rendered;
     }
 
+    removeRecipe(id) {
+        if (RecipeDetailActions.removeRecipe(id)) {
+            this.props.history.push('/recipes');
+        }
+    }
+
+
     render() {
+        console.log(this.state.recipe);
+        const modificationButtons = this.state.recipe.is_owner ? (
+            <div>
+                <a onClick={() => this.removeRecipe(this.state.recipe.id)} className="pull-right">
+                    <Button color="warning">Remove
+                </Button></a>
+                {/* <Link to={`/recipes/edit/${this.state.recipe.id}`} className="pull-right"> */}
+                {/* <Button color="info">Edit */}
+                {/* </Button></Link> */}
+            </div>
+            ) : null;
+
+        const regionInfo = this.state.recipe.region !== null &&
+            typeof this.state.recipe.region !== 'undefined' ? (<div>Region
+                            <li className="justify-content-between input-group">
+                                <span className="input-group-addon"><span className="glyphicon glyphicon-globe" /></span>
+                                <div className="form-control">{this.state.recipe.region_display}</div>
+                            </li></div>) : null;
+        const categoryInfo = this.state.recipe.category !== null &&
+            typeof this.state.recipe.category !== 'undefined' ? (<div>Category
+                            <li className="justify-content-between input-group">
+                                <span className="input-group-addon"><span className="fa fa-tags" /></span>
+                                <div className="form-control">{this.state.recipe.category.name}</div>
+                            </li></div>) : null;
+
         return (
             <div className="animated fadeIn">
                 {this.renderImages(this.state.recipe.images)}
@@ -192,10 +212,13 @@ class RecipeDetail extends Component {
                     <h1 className="mt-4">{this.state.recipe.title}</h1>
                     <p className="lead">
                         by
-                        <a href=""> {this.state.recipe.author.user.username}</a>
+                        <Link to={`/profile/${this.state.recipe.author.id}`}> {this.state.recipe.author.user.username}</Link>
                     </p>
+
+                    {modificationButtons}
                     <p><small>{this.state.recipe.date_published}</small></p>
                     <hr />
+
                     <div className="well">
                         <h3 className="mt-0">Details</h3>
                         <hr />
@@ -217,6 +240,16 @@ class RecipeDetail extends Component {
                                 <span className="input-group-addon"><span className="glyphicon glyphicon-fire" /></span>
                                 <div className="form-control">{this.state.recipe.cooking_time} minutes</div>
                             </li>
+                            <br />
+                            Servings
+                            <li className="justify-content-between input-group">
+                                <span className="input-group-addon"><span className="glyphicon glyphicon-cutlery" /></span>
+                                <div className="form-control">{this.state.recipe.servings}</div>
+                            </li>
+                            <br />
+                            {regionInfo}
+                            <br />
+                            {categoryInfo}
                         </ul>
                     </div>
                     <div className="well">
