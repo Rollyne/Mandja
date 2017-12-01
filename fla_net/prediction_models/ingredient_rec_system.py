@@ -10,6 +10,39 @@ from math import isnan
 path = os.path.dirname(__file__)
 
 
+def get_ingredients_for_recipe(recipe_ingredients: [str], fridge_ingredients: [str]):
+    """
+    Gets replacement ingredients for ingredients needed for a recipe but not present in the fridge.
+    :param recipe_ingredients:
+    The ingredients needed for a recipe.
+    :param fridge_ingredients:
+    The ingredients present in a fridge.
+    :return:
+    Returns a dictionary with missing ingredients for keys
+    and a list of replacement ingredients for values
+    """
+    missing_ingredients = []
+    used_ingredients = []
+    for recipe_ingredient in recipe_ingredients:
+        if recipe_ingredient in fridge_ingredients:
+            used_ingredients.append(recipe_ingredient)
+            fridge_ingredients.remove(recipe_ingredient)
+        else:
+            missing_ingredients.append(recipe_ingredient)
+
+    result = {}
+
+    for missing_ingredient in missing_ingredients:
+        replacements = get_top_replacements(missing_ingredient)
+        replacements_list = []
+        for replacement in replacements:
+            if replacement > 0.3: # The value is not yet decided
+                replacements_list.append(replacement)
+        result[missing_ingredient] = replacements_list
+
+    return result
+
+
 def get_top_replacements(ingredient_name: str, top_n: int = 5):
     """
     Gets the top ingredient matches for given ingredient based on the value
