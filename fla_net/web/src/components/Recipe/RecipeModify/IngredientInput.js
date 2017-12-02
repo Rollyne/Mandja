@@ -4,22 +4,39 @@ import NumericInput from 'react-numeric-input';
 import VirtualizedSelect from 'react-virtualized-select/dist/es/VirtualizedSelect/VirtualizedSelect';
 
 function IngredientInput(props) {
-    const unitOptions = [{
-        label: 'Kilograms',
-        value: 'kg',
-    },
-    {
-        label: 'Mililiters',
-        value: 'ml',
-    },
-    {
-        label: 'Grams',
-        value: 'g',
-    },
-    {
-        label: 'Liters',
-        value: 'l',
-    },
+    const unitOptions = [
+        {
+            label: 'Grams',
+            value: 'g',
+        },
+        {
+            label: 'Kilograms',
+            value: 'kg',
+        },
+        {
+            label: 'Milliliters',
+            value: 'ml',
+        },
+        {
+            label: 'Liters',
+            value: 'l',
+        },
+        {
+            label: 'Cups',
+            value: 'cp',
+        },
+        {
+            label: 'Pieces',
+            value: 'pc',
+        },
+        {
+            label: 'Teaspoons',
+            value: 'tsp',
+        },
+        {
+            label: 'Tablespoons',
+            value: 'tbsp',
+        },
     ];
 
     return (
@@ -52,7 +69,10 @@ function IngredientInput(props) {
                     className="group-item"
                     onChange={props.handleIngredientInputChange}
                     value={props.ingredientValue}
-                    options={props.options} />
+                    options={props.options}
+                    noResultsText={<a onClick={props.toggleIngredientAdd} style={{ cursor: 'pointer' }}>
+                        No ingredients found!
+                        Add a custom one.</a>} />
             </div>
         </div>
     );

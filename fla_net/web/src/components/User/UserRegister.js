@@ -45,6 +45,9 @@ export default class UserRegister extends React.Component {
 
         UserActions.registerUser(data);
 
+        this.props.history.push('/');
+
+
         return true;
     }
 

@@ -8,7 +8,7 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        exclude = ['password', 'is_superuser', 'user_permissions', 'id']
+        exclude = ['password', 'is_superuser', 'user_permissions', 'last_login', 'is_staff', 'is_active', 'groups']
 
 
 class AccountSerializer(serializers.ModelSerializer):

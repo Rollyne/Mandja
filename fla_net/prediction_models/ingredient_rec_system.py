@@ -37,7 +37,7 @@ def get_ingredients_for_recipe(recipe_ingredients: [str], fridge_ingredients: [s
         replacements = get_top_replacements(missing_ingredient)
         replacements_list = []
         for replacement in replacements:
-            if replacement > 0.3: # The value is not yet decided
+            if replacement > 0.3:  # The value is not yet decided
                 replacements_list.append(replacement)
         result[missing_ingredient] = replacements_list
 

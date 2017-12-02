@@ -3,8 +3,9 @@ import {
     Carousel,
     CarouselItem,
     CarouselControl,
-    CarouselIndicators,
+    CarouselIndicators, Button,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import CommentForm from './CommentForm';
 import IngredientCard from './IngredientCard';
 import DescriptionCard from './DescriptionCard';
@@ -53,13 +54,15 @@ class RecipeDetail extends Component {
 
     next() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === this.state.recipe.images.length - 1 ? 0 : this.state.activeIndex + 1;
+        const nextIndex = this.state.activeIndex ===
+        this.state.recipe.images.length - 1 ? 0 : this.state.activeIndex + 1;
         this.setState({ activeIndex: nextIndex });
     }
 
     previous() {
         if (this.animating) return;
-        const nextIndex = this.state.activeIndex === 0 ? this.state.recipe.images.length - 1 : this.state.activeIndex - 1;
+        const nextIndex = this.state.activeIndex ===
+        0 ? this.state.recipe.images.length - 1 : this.state.activeIndex - 1;
         this.setState({ activeIndex: nextIndex });
     }
 
@@ -80,7 +83,8 @@ class RecipeDetail extends Component {
                             substitutes={this.state.substitutes}
                             key={ingredients[i].ingredient_id}
                             quantity={ingredients[i].quantity}
-                            unit={ingredients[i].unit}
+                            unit={ingredients[i].unit_display}
+                            supported={ingredients[i].supported}
                             ingredient={ingredients[i].ingredient_name.replace('_', ' ')} />
                     )));
             }
@@ -126,7 +130,7 @@ class RecipeDetail extends Component {
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                     key={item.picture}
-                    src={item.picture.picture}
+                    src={item.picture}
                     altText=""
                     interval="false"
                     data-interval="false" />));
@@ -157,7 +161,10 @@ class RecipeDetail extends Component {
             const sorted = comments;// comments.sort((kv1, kv2) => kv1[1] - kv2[1]);
             if (sorted.length > 0) {
                 Object.keys(sorted).map(i =>
-                    rendered.push((<CommentCard key={i} comment={sorted[i]} />
+                    rendered.push((<CommentCard
+                        key={i}
+                        comment={sorted[i]}
+                        removeClick={() => RecipeDetailActions.removeComment(sorted[i].id, i)} />
                     )));
             }
         }
@@ -165,7 +172,39 @@ class RecipeDetail extends Component {
         return rendered;
     }
 
+    removeRecipe(id) {
+        if (RecipeDetailActions.removeRecipe(id)) {
+            this.props.history.push('/recipes');
+        }
+    }
+
+
     render() {
+        console.log(this.state.recipe);
+        const modificationButtons = this.state.recipe.is_owner ? (
+            <div>
+                <a onClick={() => this.removeRecipe(this.state.recipe.id)} className="pull-right">
+                    <Button color="warning">Remove
+                </Button></a>
+                {/* <Link to={`/recipes/edit/${this.state.recipe.id}`} className="pull-right"> */}
+                {/* <Button color="info">Edit */}
+                {/* </Button></Link> */}
+            </div>
+            ) : null;
+
+        const regionInfo = this.state.recipe.region !== null &&
+            typeof this.state.recipe.region !== 'undefined' ? (<div>Region
+                            <li className="justify-content-between input-group">
+                                <span className="input-group-addon"><span className="glyphicon glyphicon-globe" /></span>
+                                <div className="form-control">{this.state.recipe.region_display}</div>
+                            </li></div>) : null;
+        const categoryInfo = this.state.recipe.category !== null &&
+            typeof this.state.recipe.category !== 'undefined' ? (<div>Category
+                            <li className="justify-content-between input-group">
+                                <span className="input-group-addon"><span className="fa fa-tags" /></span>
+                                <div className="form-control">{this.state.recipe.category.name}</div>
+                            </li></div>) : null;
+
         return (
             <div className="animated fadeIn">
                 {this.renderImages(this.state.recipe.images)}
@@ -174,10 +213,13 @@ class RecipeDetail extends Component {
                     <h1 className="mt-4">{this.state.recipe.title}</h1>
                     <p className="lead">
                         by
-                        <a href=""> {this.state.recipe.author.user.username}</a>
+                        <Link to={`/profile/${this.state.recipe.author.id}`}> {this.state.recipe.author.user.username}</Link>
                     </p>
+
+                    {modificationButtons}
                     <p><small>{this.state.recipe.date_published}</small></p>
                     <hr />
+
                     <div className="well">
                         <h3 className="mt-0">Details</h3>
                         <hr />
@@ -199,6 +241,16 @@ class RecipeDetail extends Component {
                                 <span className="input-group-addon"><span className="glyphicon glyphicon-fire" /></span>
                                 <div className="form-control">{this.state.recipe.cooking_time} minutes</div>
                             </li>
+                            <br />
+                            Servings
+                            <li className="justify-content-between input-group">
+                                <span className="input-group-addon"><span className="glyphicon glyphicon-cutlery" /></span>
+                                <div className="form-control">{this.state.recipe.servings}</div>
+                            </li>
+                            <br />
+                            {regionInfo}
+                            <br />
+                            {categoryInfo}
                         </ul>
                     </div>
                     <div className="well">

@@ -28,7 +28,7 @@ class RecipeDetailStore {
 
     onGetRecipeSuccess(recipe) {
         this.recipe = recipe;
-        console.log(recipe);
+        this.recipe.descriptions = recipe.descriptions.reverse();
     }
 
     onGetRecipeFail(error) {
@@ -68,6 +68,24 @@ class RecipeDetailStore {
     }
     onGetSubstitutesFail(error) {
         toastr.error(error);
+    }
+
+    onRemoveRecipeSuccess() {
+        toastr.success('Removed successfully');
+    }
+
+    onRemoveRecipeFail(error) {
+        console.log(error.detail);
+        toastr.warning(error);
+    }
+
+    onRemoveCommentSuccess(index) {
+        delete this.recipe.comments[index];
+        toastr.success('Comment removed');
+    }
+
+    onRemoveCommentFail(error) {
+        toastr.warning(error.detail);
     }
 }
 

@@ -68,7 +68,7 @@ class RecipeList extends React.Component {
         }
 
         if (currentPage + 1 <= pages) {
-            items.push(<PaginationItem className="pointer">
+            items.push(<PaginationItem key="-3" className="pointer">
                 <PaginationLink
                     next
                     onClick={() => RecipeListActions

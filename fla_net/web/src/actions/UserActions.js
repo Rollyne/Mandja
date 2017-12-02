@@ -44,13 +44,19 @@ class UserActions {
                 'X-CSRFToken': csrftoken,
             },
         };
-
+        const credentials = {
+            username: data.user.username,
+            password: data.user.password,
+        };
         $.ajax(request)
-            .done(() => this.registerUserSuccess())
+            .done(() => {
+                this.registerUserSuccess(); this.loginUser(credentials);
+            })
             .fail((error) => {
                 console.log(error);
                 this.registerUserFail(error);
             });
+
         return true;
     }
 
