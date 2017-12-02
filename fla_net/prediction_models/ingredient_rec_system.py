@@ -12,25 +12,26 @@ path = os.path.dirname(__file__)
 
 def get_ingredients_for_recipe(recipe_ingredients: [str], fridge_ingredients: [str]):
     """
-    Gets replacement ingredients for ingredients needed for a recipe but not present in the fridge.
+    For each ingredient in the recipe this function
+    gets the best ingredient(s) to use from our fridge.
     :param recipe_ingredients:
     The ingredients needed for a recipe.
     :param fridge_ingredients:
     The ingredients present in a fridge.
     :return:
-    Returns a dictionary with missing ingredients for keys
-    and a list of replacement ingredients for values
+    Returns a dictionary with recipe ingredients for keys and
+    a list of present fridge ingredients that can be used for values
     """
+    result = {}
     missing_ingredients = []
     used_ingredients = []
     for recipe_ingredient in recipe_ingredients:
         if recipe_ingredient in fridge_ingredients:
             used_ingredients.append(recipe_ingredient)
             fridge_ingredients.remove(recipe_ingredient)
+            result[recipe_ingredient] = recipe_ingredient
         else:
             missing_ingredients.append(recipe_ingredient)
-
-    result = {}
 
     for missing_ingredient in missing_ingredients:
         replacements = get_top_replacements(missing_ingredient)
