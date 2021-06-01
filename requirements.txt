@@ -32,6 +32,6 @@ scipy==1.0.0
 six==1.11.0
 sklearn==0.0
 uritemplate==3.0.0
-urllib3==1.22
+urllib3==1.26.5
 Werkzeug==0.12.2
 whitenoise==3.3.1
